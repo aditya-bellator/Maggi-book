@@ -1,15 +1,20 @@
 .main-layout{
+   
     .layout-nav-col{
         width: 100%;
     }
     .main-layout-col{
         display:flex;
         gap: 5px;
+        height: 100vh;
+        background-color: aqua;
         .main-layout-sider{
             width: 20%;
+            height: 100%;
         }
         .main-layout-content{
             width: 80%;
+            height: 100%;
         }
     }
 }
