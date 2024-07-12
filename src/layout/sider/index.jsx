@@ -60,7 +60,7 @@ const Sider = () => {
                   {togle1[fruit?.name]? (
                     <ul>
 
-                      <li>List1</li>
+                      <li>List11</li>
                       
                     </ul>
                   ) : (
