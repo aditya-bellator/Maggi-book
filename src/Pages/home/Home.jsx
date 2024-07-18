@@ -9,6 +9,8 @@ import SportsCricketIcon from '@mui/icons-material/SportsCricket';
 import SportsBaseballIcon from '@mui/icons-material/SportsBaseball';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import { SubNav } from "../../layout/subnav/SubNav";
+import SubNavTwo from "../../layout/subnavtwo/SubNavTwo";
+
 
 const Home = () => {
   const matchArray = [
@@ -47,7 +49,8 @@ const Home = () => {
 
   return (
     <>
-    <SubNav/>
+    {/* <SubNav/> */}
+    <SubNavTwo />
     <section>
       <div className="main-left-container">
         <div className="hero-sec">
