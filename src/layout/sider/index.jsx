@@ -54,14 +54,21 @@ const Sider = () => {
                       ...prev,[name]:!togle1[fruit?.name]
                     }
                   })} key={fruit}>
-                    <span>{fruit.icon}</span>
-                    {fruit.name}
+                    
+                      <span>{fruit.icon}</span>
+                   {fruit.name} 
+                    
+                    <span><KeyboardArrowDownIcon /></span>
                   </li>
                   {togle1[fruit?.name]? (
                     <ul>
 
-                      <li>List11</li>
-                      
+                      <li style={{borderBottom:"none"}}>List11</li>
+                      <li style={{borderBottom:"none"}}>List11</li>
+                      <li style={{borderBottom:"none"}}>List11</li>
+                      <li style={{borderBottom:"none"}}>List11</li>
+                      <li style={{borderBottom:"none"}}>List11</li>
+                    
                     </ul>
                   ) : (
                     ""

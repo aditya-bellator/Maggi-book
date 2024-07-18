@@ -1,8 +1,17 @@
+@import "../../styles/variables/mixins";
 .nav-main{
     width: 100%;
     background: #762e56;
+    @media (max-width: 767px) {
+     
+        background: red;
+        font-size: 8px;
+        display: none;
+            
+        }
     .menu-list{
         display: flex;
+        
         margin: 0%;
         padding: 0%;
 
@@ -18,11 +27,11 @@ a{
         display: flex;
         align-items: center;
         justify-content: start;
-        font-weight: 900;
+        font-weight: 800;
     color: white;
     position: relative;
     // padding-inline: 20px;
-    padding-block: 10px;
+    padding-block: 4px;
     list-style: none;
     text-decoration: none;
     border-bottom: 2px solid transparent;

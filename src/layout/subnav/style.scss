@@ -1,0 +1,126 @@
+@import "../../styles/variables/mixins";
+.sub-nav{
+    display: flex;
+    height: 35px;
+    background: #23292D;
+   color:  rgb(170, 175, 181);
+    margin-top: 10px;
+    @media (max-width: 767px) {
+      flex-direction: column-reverse; 
+      height: auto; 
+      width: 100%;
+    }
+    .sub-col-left{
+        width: 80%;
+        display: flex;
+        background: #444444;
+        
+        @media (max-width: 767px) {
+        width: 95%;
+        border-radius: 5px;
+        margin: 0 2.5%;
+        padding: 5px 0;
+      
+            
+        }
+.marquee-sec{
+    width: 95%;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    margin: auto 0;
+}
+        .icon-speak{
+            width: 4%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .sub-col-right{
+        width: 20%;
+        padding: 0px 5px;
+        display: flex;
+        font-size: 14px;
+        gap: 2%;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 30px;
+            // flex-direction: column;
+            
+           
+                
+            }
+        .pts{
+            margin: auto 0;
+            width: 50%;
+            align-items: center;
+            p{
+                margin: 0;
+                padding: 0;
+                
+                span{
+                    width: 40px;
+                    &:first-child{
+                        
+                        padding-right: 5px;
+                        margin-right: 5px;
+                        border-right: 1px solid gray;
+                    }
+                }  
+            }
+        }
+        .demo{
+            
+            width: 50%;
+            margin: auto 0;
+            align-items: center;
+            .demouser{
+                display: flex;
+                cursor: pointer;
+                p{
+                        margin: 0;
+                padding: 0;
+                text-align: center;
+                display: flex;
+                &:first-child{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50px;
+                    color: rgb(35, 41, 45);
+                    background-color: rgb(117, 117, 117);
+                    margin-right: 5px;
+                    svg{
+                            font-size: 20px;
+                        margin: auto;
+                        text-align: center;
+                    }
+                }
+                &:last-child{
+                    padding-top: 3px;
+                }
+            }
+            
+        }
+        }
+    }
+}
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+    background: black !important;
+    color: white !important;
+min-height: none !important;
+overflow-y: none !important;
+    max-height: none !important;
+}
+.css-159wgzx-MuiDivider-root {
+    border-color: rgb(117, 117, 117, .5)  !important;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+    min-height: auto;
+    &:hover{
+        background: rgb(117, 117, 117, .5)!important;
+      }
+}
