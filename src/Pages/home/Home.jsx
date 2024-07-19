@@ -10,6 +10,7 @@ import SportsBaseballIcon from '@mui/icons-material/SportsBaseball';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import { SubNav } from "../../layout/subnav/SubNav";
 import SubNavTwo from "../../layout/subnavtwo/SubNavTwo";
+import Footer from "../../layout/footer/Footer";
 
 
 const Home = () => {
@@ -49,8 +50,8 @@ const Home = () => {
 
   return (
     <>
-    {/* <SubNav/> */}
-    <SubNavTwo />
+    <SubNav/>
+    {/* <SubNavTwo /> */}
     <section>
       <div className="main-left-container">
         <div className="hero-sec">
@@ -108,6 +109,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+   <Footer/>
       </div>
       <div className="main-right-container">
         <p>Our Casino</p>

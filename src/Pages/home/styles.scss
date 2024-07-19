@@ -1,7 +1,7 @@
 @import "../../styles/variables/mixins";
 section {
   width: 100%;
-  height: calc(100% - 45px);
+  height: calc(600px - 45px);
   overflow: hidden;
   display: flex;
   @media (max-width: 767px) {
