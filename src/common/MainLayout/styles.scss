@@ -9,15 +9,28 @@
         gap: 5px;
         height: 100%;
         background-color: #23292D;
+        @include mediaQuery(phone){
+            gap: 0px;
+        }
         .main-layout-sider{
             width: 20%;
             height: 100%;
+            transition: width 0.2s;
             @media (max-width: 767px) {
-                width: 0;
+                width: 0%;
                 // height: 100%;
-                position: absolute;
+
+               
                 
             }
+        }
+        .main-layout-sider-active{
+            width: 100%;
+            position: fixed;
+            background-color: rgba(0,0,0,0.2);
+            height: 100vh;
+            z-index: 111;
+            transition: width 0.2s;
         }
         .main-layout-content{
             width: 80%;

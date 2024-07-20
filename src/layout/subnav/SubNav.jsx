@@ -6,7 +6,10 @@ import MenuItem from '@mui/material/MenuItem';
 import EditIcon from '@mui/icons-material/Edit';
 import PersonIcon from '@mui/icons-material/Person';
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import MenuIcon from '@mui/icons-material/Menu';
 import { Menu } from '@mui/material';
+import logos from "../../assets/logo.png"
+import { siderHandlerRef } from '../../common/MainLayout';
 export const SubNav = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -29,8 +32,16 @@ export const SubNav = () => {
         </div>
         <div className="sub-col-right">
           <div className="logo-menu">
-            sada
+            <div className="menu-icon" onClick={siderHandlerRef}>
+<MenuIcon/>
+            </div>
+            <div className="logo-icon">
+              <img src={logos} alt="logo" />
+            </div>
           </div>
+          <div className="pts-sec">
+
+         
             <div className="pts">
                 <p>
 
@@ -81,6 +92,7 @@ export const SubNav = () => {
         </MenuItem>
       </Menu>
 
+            </div>
             </div>
         </div>
     </div>

@@ -92,20 +92,14 @@ const Home = () => {
           >
             <GameTitle names={[selectedGame]} icon={[selectedGameIcon]} />
             <div className="games-col">
-              {selectedGame && (
-                <>
-                  <Game />
-                  <Game />
-                  <Game />
-                  <Game />
-                  <Game />
-                  <Game />
-                  <Game />
-                  <Game />
-                  <Game />
-                  <Game />
-                </>
-              )}
+             {[1,2,3,4,5,6].map((item,i)=>{
+              return(
+                <Game key={i} index={i}/>
+              )
+             })}
+             
+               
+              
             </div>
           </div>
         </div>

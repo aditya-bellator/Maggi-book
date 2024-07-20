@@ -25,9 +25,8 @@ const Sider = () => {
   ];
   const [togle, setTogle] = useState(false);
   const [togle1, setTogle1] = useState({});
-  console.log(togle1)
   return (
-    <div className="main-sider">
+    <div className="main-sider" onClick={(e)=>e.stopPropagation()}>
       <div className="logo">
         <img src={""} alt="logo" />
       </div>

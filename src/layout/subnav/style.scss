@@ -9,6 +9,8 @@
       flex-direction: column-reverse; 
       height: auto; 
       width: 100%;
+      background-color: rgb(23, 25, 28);
+      padding-bottom: 10px;
     }
     .sub-col-left{
         width: 80%;
@@ -47,24 +49,67 @@
         gap: 2%;
         justify-content: space-between;
         @media (max-width: 767px) {
+            padding: 0px 0px;
             width: 100%;
-            height: 30px;
-            // flex-direction: column;
-            
-           
                 
             }
-        .pts{
-            margin: auto 0;
-            width: 50%;
-            align-items: center;
-            p{
-                margin: 0;
-                padding: 0;
+            .logo-menu{
+                display: none;
+                @media (max-width: 767px) {
+                    display: block;
+                    display: flex;
+                    flex-direction: row;
+                    // display: flex;
+                    gap: 10px;
+                    padding-left: 10px;
+                    // display: block;
+                    width: 50%;
+                         
+                    }
+                    .menu-icon{
+                        margin: auto 0;
+
+                    }
+                    .logo-icon{
+                        width: 100px;
+                        height: 30px;
+                        margin: auto 0;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+            }
+            .pts-sec{
+                width: 100%;
+                display: flex;
                 
-                span{
-                    width: 40px;
-                    &:first-child{
+                @media (max-width: 767px) {
+                    display: flex;
+                    width: 50%;
+                  
+                    gap: 3px;
+                    padding: 0px 10px;
+                    flex-direction: column;       
+                    }
+                    .pts{
+                        margin: auto 0;
+                        width: 50%;
+                        align-items: center;
+                        @media (max-width: 767px) {
+                        //    align-items: end;  
+                           width: 100%;
+                           font-size: 12px;
+                           text-align: end;   
+                            }
+                            p{
+                                margin: 0;
+                                padding: 0;
+                                
+                                span{
+                                    width: 40px;
+                                    &:first-child{
                         
                         padding-right: 5px;
                         margin-right: 5px;
@@ -78,11 +123,23 @@
             width: 50%;
             margin: auto 0;
             align-items: center;
+            @media (max-width: 767px) {
+             display: flex;
+             justify-content: end;
+                width: 100%;
+                font-size: 12px;
+                text-align: end;
+                 }
             .demouser{
                 display: flex;
                 cursor: pointer;
+                @media (max-width: 767px) {
+                   width: 100%;
+                display: contents;  
+                    }
                 p{
                         margin: 0;
+                        text-transform: uppercase;
                 padding: 0;
                 text-align: center;
                 display: flex;
@@ -93,19 +150,31 @@
                     color: rgb(35, 41, 45);
                     background-color: rgb(117, 117, 117);
                     margin-right: 5px;
+                    @media (max-width: 767px) {
+                        width: 15px;
+                        height: 15px;
+                         }
                     svg{
-                            font-size: 20px;
+                            font-size: 17px;
                         margin: auto;
                         text-align: center;
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                             }
                     }
                 }
                 &:last-child{
                     padding-top: 3px;
+                    @media (max-width: 767px) {
+                    align-items: center;
+                         }
+                       
                 }
             }
             
         }
         }
+    }
     }
 }
 .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{

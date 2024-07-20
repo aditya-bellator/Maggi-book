@@ -1,3 +1,4 @@
+@import "../../styles/variables/mixins";
 .footer{
    
     .support{
@@ -35,11 +36,18 @@
         justify-content: center;
         gap: 50px;
         align-items: center;
+        @media (max-width: 767px) {
+            margin-top: 10px;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
         a{
             text-decoration: none;
-            // :hover{
-                //     color: rgb(253, 207, 19)!important;
-                // }
+            @media (max-width: 767px) {
+                text-align: center;
+                width: 40%;
+            }
+           
     li{
         display: flex;
         align-items: center;
@@ -55,7 +63,11 @@
     list-style: none;
     text-decoration: none;
     border-bottom: 2px solid #aaafb5;
-
+    @media (max-width: 767px) {
+        justify-content: center;
+        border-bottom:none;
+        
+    }
 }
 
 }
@@ -73,6 +85,9 @@ a{
     border-radius: 100px;
     background-color: #aaafb5;
     transform: translateY(-50%);
+    @media (max-width: 767px) {
+      display: none;
+    }
     }
     }
 }
@@ -94,11 +109,21 @@ a{
         color: rgb(170, 175, 181);
         // font-family: "Noto Sans";
         font-weight: 400;
+        @media (max-width: 767px) {
+            width: 80%;  
+            margin: auto auto;
+            padding-bottom: 20px;
+        }
         h2{
             margin: 0;
             padding: 0;
             font-size: 14px;
             text-align: center;
+            @media (max-width: 767px) {
+                text-align: left;
+                padding-left: 12px;
+              
+            }
         }
         p{
             margin: 0;
@@ -118,7 +143,8 @@ a{
             li{
                 width: 100px;
                 height: 50px;
-                background: red;
+                // background: red;
+                padding: 4px;
                 img{
                     width: 100%;
                     height: 100%;

@@ -1,15 +1,25 @@
 import React from 'react'
 import "./style.scss"
 import LiveTvIcon from '@mui/icons-material/LiveTv';
-export const Game = () => {
+const livedata = "live";
+export const Game = ({index}) => {
   return (
     <div className='gamechart'>
         <div className="game-col-left">
-            <div className="day">
-                <span>Live</span>
-            <div className="animate">
-                
-            </div>
+           <div className="day-live">
+         {index ==2? <div className="live">
+          <span>Live</span>
+      <div className="animate"> 
+
+      </div>
+      </div>:
+         
+             <div className="day">
+                <span>Today</span></div>
+                }
+
+            
+           
             </div>
             <div className="time">
                 <span>2:30 PM</span>
