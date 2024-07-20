@@ -1,15 +1,15 @@
-.modal-overlay {
+.modal-overlay_n {
   position: absolute;
   top: 0px;
-  left: 394px;
+  left: 325px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  width: 450px;
+  width: 768px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
-  .modal-content {
+  .modal-content_n {
     background-color: #333333;
     border-radius: 8px;
     width: 100%;
@@ -18,7 +18,7 @@
     overflow: hidden;
     overflow-y: scroll;
 
-    .modal-button {
+    .modal-button_n {
       position: sticky;
       top: 0;
       left: 50%;
@@ -36,8 +36,9 @@
         font-weight: 500;
         font-size: 1.25rem;
         line-height: 1.6;
+        color: white;
       }
-      .close-button {
+      .close-button_n {
         background: none;
         border: none;
         font-size: 1.5em;
@@ -50,7 +51,7 @@
         }
       }
     }
-    .login-modal {
+    .login-modal_n {
       color: rgb(158, 158, 158);
       width: 88%;
       margin: auto;
@@ -59,14 +60,77 @@
       padding: 16px;
       margin-top: 16px;
       margin-bottom: 16px;
+      .whatsapp-box{
+        padding: 8px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span{
+        color: rgb(158, 158, 158);
+        font-size: 14px;
+    }
+    h4{
+        color: rgb(158, 158, 158);
+        font-weight: 700;
+    font-size: 18px;
+    margin-top: 8px;
+    }
+    .whatsapp-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        img{
+            background-color: #25d366;
+            color: #fff;
+            padding: 10px;
+            border-radius: 6px;
+         
+            width: 34px;
+            box-shadow: 0 0 3px #fff;
+          
+        }
+        .click-here{
+            background-color: #25d366;
+        color: #fff;
+        padding: 8px;
+        width: calc(100% - 45px);
+        margin-left: -5px;
+        height: auto;
+        line-height: normal;
+        border-radius: 4px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        }
+        
+    }
+    .or_text{
 
-      .form {
+        margin: 15px auto;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+      }
+
+      .form_n {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        .form-group {
+        .form-group_n {
           display: flex;
-          flex-direction: column;
+          width: 100%;
+          gap: 20px;
+        
+          .half-width{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+          }
           label {
             font-size: 1rem;
             line-height: 1.5;

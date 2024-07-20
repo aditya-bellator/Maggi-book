@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const handlTabClick = (i)=>{
     setActiveTab(i)
-    if(i===0){
+    if (i === 0 || i === 3 || i === 4 || i === 5) {
       setModalOpen(true)
     }
   };
