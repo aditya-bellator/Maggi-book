@@ -2,4 +2,5 @@
 const home = "/"
 
 const login = "/login"
-export {home,login}
+const sportsDetails ="//sports/details"
+export {home,login,sportsDetails}
