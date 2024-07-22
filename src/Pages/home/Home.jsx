@@ -11,7 +11,9 @@ import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import { SubNav } from "../../layout/subnav/SubNav";
 import SubNavTwo from "../../layout/subnavtwo/SubNavTwo";
 import Footer from "../../layout/footer/Footer";
-
+import GameCard from "../../component/game-card/GameCard";
+import {arry} from "../../common/MainLayout/json/json";
+// import  "../../assets/index";
 
 const Home = () => {
   const matchArray = [
@@ -102,6 +104,24 @@ const Home = () => {
               
             </div>
           </div>
+          
+            { arry?.map((item)=>{
+              return(
+          <div className="fantacy-sec"  key={item?.name}>
+            <h1>{item?.name}</h1>
+            <div className="fantacy-game">
+              {item?.img?.map((elm)=>{
+                return(
+
+                  <GameCard img={elm?.img} name={elm?.imageName} key={elm?.imageName}/>
+                )
+              })}
+            </div>
+          </div>
+              )
+        })}
+        
+      
         </div>
    <Footer/>
       </div>

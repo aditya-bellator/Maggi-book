@@ -108,6 +108,28 @@ section {
       } 
      
     }
+    .fantacy-sec{
+display: flex;
+flex-direction: column;
+text-align: center;
+h1{
+  font-size: 1.75rem;
+  padding: 16px 0;
+    font-weight: 700;
+    color: gray;
+    text-transform: capitalize;
+    margin: 0;
+    font-family:sans-serif;
+}
+      .fantacy-game{
+        width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+  padding: 10px 20px;
+
+    }
+  }
   }
   .main-right-container {
     width: 25%;
