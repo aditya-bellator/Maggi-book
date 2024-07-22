@@ -2,7 +2,7 @@
 .footer{
    
     .support{
-        width: 100%;
+        width:calc(100% - 20px);
     display: flex;
     background-image: linear-gradient(#2c8268, #16191c);
     padding: 10px;

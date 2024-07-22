@@ -2,9 +2,12 @@
 import Sider from '../../layout/sider';
 import Navbar from '../../layout/navbar';
 import { Outlet } from 'react-router-dom';
+import Footer from "../../layout/footer/Footer"
 ////styles
 import "./styles.scss"
 import { useEffect, useState } from 'react';
+import SubNavTwo from '../../layout/subnavtwo/SubNavTwo';
+import { SubNav } from '../../layout/subnav/SubNav';
 export let siderHandlerRef;
 const MainLayout = () => {
   const [activeSider, setActiveSider] = useState(false)
@@ -25,6 +28,7 @@ useEffect(() => {
   }
 }, [activeSider])
 
+const [isLogin, setIsLogin] = useState(true)
   return (
     <div className='main-layout'>
       <div className="layout-nav-col">
@@ -38,9 +42,13 @@ useEffect(() => {
       {/* }  */}
       </div>
       <div className="main-layout-content">
+        {isLogin? <SubNav/>:
+      <SubNavTwo />
+        }
       <Outlet />
       </div>
       </div>
+      {/* <Footer /> */}
       </div>
   )
 }
