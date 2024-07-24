@@ -1,7 +1,69 @@
-.sport-details{
-    width: 450px;
-    display: flex;
-    background-color: yellow;
-    height: 400px
+.sport-details {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  .sport-details-left {
+    width: 70%;
+    // background: green;
+    .match-heading {
+      background-color: rgb(32, 50, 123);
+      padding: 0px 8px;
+      color: white;
+      width: calc(100% - 16px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      h1 {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .match-tv {
+      background: transparent;
+      width: calc(100% - 12px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 6px;
+      color: #aaafb5;
+      margin: -7px 0px;
+      p {
+        font-size: 12px;
+      }
+      .match-tv-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // gap: 10px;
+        svg {
+          // color: blue;
+          font-size: 24px;
+        }
+      }
+      .togal-tv {
+        ap: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .sport-details-right {
+    width: 30%;
 
+    border-radius: 8px;
+    color: rgb(170, 175, 181);
+    padding: 8px;
+    overflow: auto;
+    background-color: rgb(46, 52, 56);
+    // height: 100%;
+    height: 200px;
+  }
 }

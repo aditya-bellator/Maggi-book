@@ -1,32 +1,77 @@
-import  { useState } from 'react'
-import "./styled.scss"
-import { Link } from 'react-router-dom'
-import Login from "../../Pages/login/Login"
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Login from "../../Pages/login/Login";
+import "./styled.scss";
 
 const Navbar = () => {
-  const [activeTab, setActiveTab] = useState(0)
-  const [isModalOpen, setModalOpen] = useState(false)
-  const navArray = ["Lottery","SportsBook1","Exchange","Live Casino","Slots","Fantasy Game"]
+  const [activeTab, setActiveTab] = useState(0);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const nav = useNavigate();
+  const token = localStorage.getItem('token');
+  
+  const navArray = [{
+    name:"lottery",
+    url:token?"":""
+  
 
-  const handlTabClick = (i)=>{
-    setActiveTab(i)
-    if (i === 0 || i === 3 || i === 4 || i === 5) {
-      setModalOpen(true)
+  },
+  {
+    name:"SportsBook1",
+    url:"/cuming"
+
+  },
+  {
+    name:"Exchange",
+   
+    url:token?"":"/"
+
+  },
+  {
+    name:"Live Casino",
+    
+    url:token?"":""
+
+  },
+  {
+    name:"Slots",
+    url:token?"":""
+
+  },
+  {
+    name:"Fantasy Game",
+    url:token?"":""
+
+  },
+];
+
+  const handleTabClick = (url) => {
+    if(url){
+      nav(url)
+    }
+    else{
+      setModalOpen(true);
     }
   };
-  const closeModal=()=>{
-    setModalOpen(false)
-  }
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <div className='nav-main'>
       <ul className='menu-list'>
-        {navArray?.map((item,i)=><Link to={""} key={item}><li className={i == activeTab ?`active`:""} onClick={()=>handlTabClick(i)}>{item}</li></Link>)}
-        
-    
+        {navArray.map((item, i) => (
+          // <Link to={""} key={item}>
+            <li key={item?.name+i} className={i === activeTab ? 'active' : ''} onClick={() => handleTabClick(item?.url)}>
+              {item?.name}
+            </li>
+          // </Link>
+        ))}
       </ul>
-      <Login isOpen={isModalOpen}onClose={closeModal} />
+      <Login isOpen={isModalOpen} onClose={closeModal} />
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
