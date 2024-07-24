@@ -1,4 +1,4 @@
-import { bng, img1, img3, NLC, } from "../../../assets";
+import { bng, bpg, btg, BTL, BTV, CQC, DS, ELK, EVP, EZU, FNG, FUG, GA, GMC, GZX, HAB, HAK, img1, img2, img3, img4, img5, KGL, KIR, MAV, mc, MNP, MOB, NE, NGE, NLC, OPY, OT, PNG, PP, PPC, PRS, PUG, QS, RED, RG, RLG, RLX, RTG, SHS, SPB, SWC, TPG, VGL, WAZ, WOO, x, } from "../../../assets";
 
 
 export const arry = 
@@ -10,7 +10,7 @@ export const arry =
             imageName:"aviator"
         },
         {
-            img:bng,
+            img:RLX,
             imageName:"relax"
         },
         
@@ -29,35 +29,35 @@ export const arry =
         "id":2 ,
         "img":[
             {
-            img:"",
+            img:EZU,
             imageName:"Ezugi"
         },
             {
-            img:"",
+            img:BTV,
             imageName:"betGames.TV"
         },
             {
-            img:"",
+            img:VGL,
             imageName:"Vivo gaming"
         },
             {
-            img:"",
+            img:mc,
             imageName:"pragmatic play live"
         },
             {
-            img:"",
+            img:mc,
             imageName:"7Mojos live"
         },
             {
-            img:"",
+            img:BTL,
             imageName:"beter live"
         },
             {
-            img:"",
+            img:SWC,
             imageName:"skywind live"
         },
             {
-            img:"",
+            img:img1,
             imageName:"aviator"
         },
             {
@@ -73,179 +73,183 @@ export const arry =
         "id":3 ,
         "img":[
             {
-            img:"",
+            img:img4,
             imageName:"iron dog studio"
         },
             {
-            img:"",
+            img:RED,
             imageName:"red tiger gaming"
         },
             {
-            img:"",
+            img:PUG,
             imageName:"push gaming"
         },
             {
-            img:"",
+            img:GA,
             imageName:"GameArt"
         },
             {
-            img:"",
+            img:NE,
             imageName:"NetEnt"
         },
             {
-            img:"",
+            img:EZU,
             imageName:"yggdrasil"
         },
             {
-            img:"",
+            img:WAZ,
             imageName:"wazdan"
         },
             {
-            img:"",
+            img:HAB,
             imageName:"habanero"
         },
             {
-            img:"",
+            img:img3,
             imageName:"thunderkick"
         },
             {
-            img:"",
+            img:PNG,
             imageName:"play'n Go"
         },
             {
-            img:"",
+            img:bng,
             imageName:"booongo"
         },
             {
-            img:"",
+            img:mc,
             imageName:"7Mojos casino"
         },
             {
-            img:"",
+            img:PP,
             imageName:"playpearls"
         },
             {
-            img:"",
+            img:RG,
             imageName:"revolver gaming"
         },
             {
-            img:"",
+            img:PPC,
             imageName:"pragmatic play casino"
         },
             {
-            img:"",
+            img:GZX,
             imageName:"gamzix"
         },
             {
-            img:"",
+            img:CQC,
             imageName:"CQ9 casino"
         },
             {
-            img:"",
+            img:DS,
             imageName:"dragoon soft"
         },
             {
-            img:"",
+           img:bpg,
             imageName:"blueprint gaming"
         },
             {
-            img:"",
+            img:WOO,
             imageName:"woohoo games"
         },
             {
-            img:"",
+            img:GMC,
             imageName:"gaming crops"
         },
             {
-            img:"",
+            img:TPG,
             imageName:"triple PG"
         },
             {
-            img:"",
+            img:SWC,
             imageName:"skywind casino"
         },
             {
-            img:"",
+            img:MNP,
             imageName:"manna play"
         },
             {
-            img:"",
+            img:KGL,
+            imageName:"kalamba games"
+        },
+            {
+            img:MAV,
             imageName:"maverick"
         },
             {
-            img:"",
+            img:EVP,
             imageName:"Evoplay"
         },
             {
-            img:"",
+            img:MOB,
             imageName:"mobilots"
         },
             {
-            img:"",
+            img:QS,
             imageName:"quickspin"
         },
             {
-            img:"",
+            img:x,
             imageName:"1x2 gaming"
         },
             {
-            img:"",
+            img:NGE,
             imageName:"NetGame"
         },
             {
-            img:"",
+            img:RLG,
             imageName:"Reloaded gaming"
         },
             {
-            img:"",
+            img:FNG,
             imageName:"fantasma games"
         },
             {
-            img:"",
+            img:HAK,
             imageName:"hacksaw gaming"
         },
             {
-            img:"",
+            img:RTG,
             imageName:"RTG Slots"
         },
             {
-            img:"",
+            img:OT,
             imageName:"oneTouch"
         },
             {
-            img:"",
+            img:OPY,
             imageName:"onlyplay"
         },
             {
-            img:"",
+            img:btg,
             imageName:"big time gaming"
         },
             {
-            img:"",
+            img:ELK,
             imageName:"ELK"
         },
             {
-            img:"",
+            img:SHS,
             imageName:"spearhead studio"
         },
             {
-            img:"",
+            img:RLX,
             imageName:"relax gaming"
         },
             {
-            img:"",
+            img:NLC,
             imageName:"nolimit city"
         },
             {
-            img:"",
+            img:FUG,
             imageName:"fugaso"
         },
             {
-            img:"",
+            img:PRS,
             imageName:"print studios"
         },
             {
-            img:"",
+            img:img5,
             imageName:"avatarUX"
         },
       
@@ -257,7 +261,7 @@ export const arry =
         "id":4 ,
         "img":[
             {
-            img:"",
+            img:DS,
             imageName:"dragoon soft"
         },
             {
@@ -265,23 +269,23 @@ export const arry =
             imageName:"turbo games"
         },
             {
-            img:"",
+            img:GMC,
             imageName:"gaming crops"
         },
             {
-            img:"",
+            img:SPB,
             imageName:"spribe"
         },
             {
-            img:"",
+            img:HAK,
             imageName:"hacksaw gaming"
         },
             {
-            img:"",
+            img:EVP,
             imageName:"evoplay"
         },
             {
-            img:"",
+            img:OT,
             imageName:"oneTouch"
         },
             {
@@ -289,35 +293,35 @@ export const arry =
             imageName:"galaxsys"
         },
             {
-            img:"",
+            img:x,
             imageName:"1x2 gaming"
         },
             {
-            img:"",
+            img:KGL,
             imageName:"kalamba game"
         },
             {
-            img:"",
+            img:OPY,
             imageName:"onlyplay"
         },
             {
-            img:"",
+            img:KIR,
             imageName:"kiron interactive"
         },
             {
-            img:"",
+            img:bpg,
             imageName:"blueprint gaming"
         },
             {
-            img:"",
+            img:MNP,
             imageName:"manna play"
         },
             {
-            img:"",
+            img:CQC,
             imageName:"CQ9 casino"
         },
             {
-            img:"",
+            img:FUG,
             imageName:"fugaso"
         },
             {
@@ -325,35 +329,35 @@ export const arry =
             imageName:"ad lunam"
         },
             {
-            img:"",
+            img:PNG,
             imageName:"play'n go"
         },
             {
-            img:"",
+            img:NGE,
             imageName:"netGame"
         },
             {
-            img:"",
+            img:MOB,
             imageName:"mobilots"
         },
             {
-            img:"",
+            img:GZX,
             imageName:"gamzix"
         },
             {
-            img:"",
+            img:BTV,
             imageName:"BetGame.TV"
         },
             {
-            img:"",
+            img:PPC,
             imageName:"Pragmatic play casino"
         },
             {
-            img:"",
+            img:WOO,
             imageName:"woohoo games"
         },
             {
-            img:"",
+            img:GA,
             imageName:"gameArt"
         },
           
@@ -364,31 +368,31 @@ export const arry =
         "id":5 ,
         "img":[
             {
-            img:"",
+            img:EVP,
             imageName:"Evoplay"
         },
             {
-            img:"",
+            img:WOO,
             imageName:"woohoo game"
         },
             {
-            img:"",
+            img:WAZ,
             imageName:"wazdan"
         },
             {
-            img:"",
+            img:BTV,
             imageName:"BetGames.TV"
         },
             {
-            img:"",
+            img:KIR,
             imageName:"Kiron interactive"
         },
             {
-            img:"",
+            img:PNG,
             imageName:"play'n go"
         },
             {
-            img:"",
+            img:SPB,
             imageName:"spribe"
         },
             {
@@ -396,11 +400,11 @@ export const arry =
             imageName:"galaxsys"
         },
             {
-            img:"",
+            img:TPG,
             imageName:"Triple PG"
         },
             {
-            img:"",
+            img:OT,
             imageName:"OneTouch"
         },
             {
@@ -408,7 +412,7 @@ export const arry =
             imageName:"Turbo Games"
         },
             {
-            img:"",
+            img:SHS,
             imageName:"Spreadhead studios"
         },
           

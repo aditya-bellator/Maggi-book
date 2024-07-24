@@ -35,7 +35,7 @@ const MatchOds = () => {
     { 
       name: "Third Player", 
       games: [
-        { value1: '1.00', value2: '19.00' },
+        { value1: '1.00', value2: '19.00',color: '#72bbef'  },
         { value1: '1.00', value2: '19.00' },
         { value1: '1.00', value2: '19.00' },
         { value1: '1.00', value2: '19.00' },

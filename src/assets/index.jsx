@@ -50,10 +50,14 @@ import TPG from "../assets/internation-casino/TPG.svg";
 import VGL from "../assets/internation-casino/VGL.png";
 import WAZ from "../assets/internation-casino/WAZ.png";
 import WOO from "../assets/internation-casino/WOO.svg";
+import SPB from "../assets/internation-casino/SPB.svg";
+import KIR from "../assets/internation-casino/KIR.png";
+import commingsoon from "../assets/internation-casino/commingsoon.gif";
 
 
 
 
 
 
-export {img1,img2,MAV,OT,SWL,WOO,RG,VGL,TPG,WAZ,SWC,RTG,RLG,SHS,RLX,PRS,RED,QS,PP,PUG,PPC,PNG,MNP,OPY,MOB,NE,NLC,NGE ,img3,img4,img5, x, mc,bng , bpg,btg ,BTL,BTV,CQC,DS,ELK,EVP,EZU,FNG,FUG,GA,GMC,GZX,HAB,HAK,IDS,KGL,}
+
+export {img1,img2,MAV,OT,KIR,SPB,SWL,WOO,RG,VGL,TPG,WAZ,SWC,RTG,RLG,SHS,RLX,PRS,RED,QS,PP,PUG,PPC,PNG,MNP,OPY,MOB,NE,NLC,NGE ,img3,img4,commingsoon,img5, x, mc,bng , bpg,btg ,BTL,BTV,CQC,DS,ELK,EVP,EZU,FNG,FUG,GA,GMC,GZX,HAB,HAK,IDS,KGL,}
