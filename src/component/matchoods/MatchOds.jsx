@@ -1,5 +1,5 @@
 import "./matchods.scss";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { FaChevronDown, FaAngleRight } from "react-icons/fa6";
 
 const MatchOds = () => {
@@ -10,49 +10,50 @@ const MatchOds = () => {
   };
 
   const data = [
-    { 
-      name: "Jana Fett", 
+    {
+      name: "Jana Fett",
       games: [
-        { value1: '1.00', value2: '19.00', color: '#72bbef' },
-        { value1: '1.00', value2: '19.00', color: '#72bbef'  },
-        { value1: '1.00', value2: '19.00', color: '#72bbef'  },
-        { value1: '1.00', value2: '19.00',color:"#b0728b" },
-        { value1: '1.00', value2: '19.00',color:"#b0728b" },
-        { value1: '1.00', value2: '19.00',color:"#b0728b" }
-      ]
+        { value1: "1.00", value2: "19.00", color: "#72bbef" },
+        { value1: "1.00", value2: "19.00", color: "#72bbef" },
+        { value1: "1.00", value2: "19.00", color: "#72bbef" },
+        { value1: "1.00", value2: "19.00", color: "#b0728b" },
+        { value1: "1.00", value2: "19.00", color: "#b0728b" },
+        { value1: "1.00", value2: "19.00", color: "#b0728b" },
+      ],
     },
-    { 
-      name: "Another Player", 
+    {
+      name: "Another Player",
       games: [
-        { value1: '1.00', value2: '19.00', color: '#72bbef'  },
-        { value1: '1.00', value2: '19.00', color: '#72bbef'  },
-        { value1: '1.00', value2: '19.00', color: '#72bbef'  },
-        { value1: '1.00', value2: '19.00',color:"#b0728b" },
-        { value1: '1.00', value2: '19.00',color:"#b0728b" },
-        { value1: '1.00', value2: '19.00',color:"#b0728b" }
-      ]
+        { value1: "1.00", value2: "19.00", color: "#72bbef" },
+        { value1: "1.00", value2: "19.00", color: "#72bbef" },
+        { value1: "1.00", value2: "19.00", color: "#72bbef" },
+        { value1: "1.00", value2: "19.00", color: "#b0728b" },
+        { value1: "1.00", value2: "19.00", color: "#b0728b" },
+        { value1: "1.00", value2: "19.00", color: "#b0728b" },
+      ],
     },
-    { 
-      name: "Third Player", 
+    {
+      name: "Third Player",
       games: [
-        { value1: '1.00', value2: '19.00' },
-        { value1: '1.00', value2: '19.00' },
-        { value1: '1.00', value2: '19.00' },
-        { value1: '1.00', value2: '19.00' },
-        { value1: '1.00', value2: '19.00' },
-        { value1: '1.00', value2: '19.00' }
-      ]
-    }
+        { value1: "1.00", value2: "19.00" },
+        { value1: "1.00", value2: "19.00" },
+        { value1: "1.00", value2: "19.00" },
+        { value1: "1.00", value2: "19.00" },
+        { value1: "1.00", value2: "19.00" },
+        { value1: "1.00", value2: "19.00" },
+      ],
+    },
   ];
 
   return (
     <div className="matchods-main">
       <div className="matchods-togel" onClick={toggle}>
         <div className="matchods">
-          {!
-          isOpen ? <FaAngleRight /> : <FaChevronDown />}
+          {!isOpen ? <FaAngleRight /> : <FaChevronDown />}
           <p>Match Odds</p>
         </div>
+        </div>
+
         {isOpen && (
           <>
             <div className="lback">
@@ -70,8 +71,11 @@ const MatchOds = () => {
                 </div>
                 <div className="layback-right">
                   {item.games.map((game, gameIndex) => (
-                    <div key={gameIndex} className="game"
-                    style={{  backgroundColor: game.color,}}>
+                    <div
+                      key={gameIndex}
+                      className="game"
+                      style={{ backgroundColor: game.color }}
+                    >
                       <p>{game.value1}</p>
                       <p>{game.value2}</p>
                     </div>
@@ -82,7 +86,7 @@ const MatchOds = () => {
           </>
         )}
       </div>
-    </div>
+   
   );
 };
 

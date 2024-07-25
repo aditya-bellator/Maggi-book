@@ -1,3 +1,4 @@
+import NotFound from "../assets/something-lost.png";
 import img1 from "../assets/fantacy-img/aviator.png";
 import img2 from "../assets/fantacy-img/logo.svg";
 import img3 from "../assets/fantacy-img/thunderkick-logo-horizontal-white.svg";
@@ -56,4 +57,4 @@ import WOO from "../assets/internation-casino/WOO.svg";
 
 
 
-export {img1,img2,MAV,OT,SWL,WOO,RG,VGL,TPG,WAZ,SWC,RTG,RLG,SHS,RLX,PRS,RED,QS,PP,PUG,PPC,PNG,MNP,OPY,MOB,NE,NLC,NGE ,img3,img4,img5, x, mc,bng , bpg,btg ,BTL,BTV,CQC,DS,ELK,EVP,EZU,FNG,FUG,GA,GMC,GZX,HAB,HAK,IDS,KGL,}
+export {NotFound,img1,img2,MAV,OT,SWL,WOO,RG,VGL,TPG,WAZ,SWC,RTG,RLG,SHS,RLX,PRS,RED,QS,PP,PUG,PPC,PNG,MNP,OPY,MOB,NE,NLC,NGE ,img3,img4,img5, x, mc,bng , bpg,btg ,BTL,BTV,CQC,DS,ELK,EVP,EZU,FNG,FUG,GA,GMC,GZX,HAB,HAK,IDS,KGL,}
