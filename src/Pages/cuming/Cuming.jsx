@@ -1,8 +1,15 @@
 import React from 'react'
-
+import CommingSoon from '../../component/comming soon/CommingSoon'
+import { commingsoon } from '../../assets'
+import "./style.scss"
 const Cuming = () => {
   return (
-    <div>Cuming</div>
+    <>
+     <div className="comming">
+
+      <img src={commingsoon} alt="COMMING SOON" />
+     </div>
+    </>
   )
 }
 

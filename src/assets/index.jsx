@@ -51,6 +51,9 @@ import TPG from "../assets/internation-casino/TPG.svg";
 import VGL from "../assets/internation-casino/VGL.png";
 import WAZ from "../assets/internation-casino/WAZ.png";
 import WOO from "../assets/internation-casino/WOO.svg";
+import SPB from "../assets/internation-casino/SPB.svg";
+import KIR from "../assets/internation-casino/KIR.png";
+import commingsoon from "../assets/internation-casino/commingsoon.gif";
 
 
 
