@@ -13,6 +13,9 @@ import SubNavTwo from "../../layout/subnavtwo/SubNavTwo";
 import Footer from "../../layout/footer/Footer";
 import GameCard from "../../component/game-card/GameCard";
 import {arry} from "../../common/MainLayout/json/json";
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+
 // import  "../../assets/index";
 
 const Home = () => {
@@ -62,7 +65,7 @@ const Home = () => {
         <div className="tabs">
           <div className="horizontal-scroll-container">
             <button onClick={scrollLeft} className="scroll-button left">
-              {"<"}
+              <KeyboardArrowLeftIcon/>
             </button>
             <div className="scroll-content" ref={scrollContainerRef}>
               {matchArray?.map((item) => {
@@ -86,7 +89,7 @@ const Home = () => {
               })}
             </div>
             <button onClick={scrollRight} className="scroll-button right">
-              {">"}
+              <KeyboardArrowRightIcon/>
             </button>
           </div>
           <div

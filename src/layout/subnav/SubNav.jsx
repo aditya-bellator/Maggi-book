@@ -10,6 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Menu } from '@mui/material';
 import logos from "../../assets/logo.png"
 import { siderHandlerRef } from '../../common/MainLayout';
+import { Link } from 'react-router-dom';
 export const SubNav = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -35,8 +36,12 @@ export const SubNav = () => {
             <div className="menu-icon" onClick={siderHandlerRef}>
 <MenuIcon/>
             </div>
+
             <div className="logo-icon">
+             <Link to={"/"}>
               <img src={logos} alt="logo" />
+             </Link>
+           
             </div>
           </div>
           <div className="pts-sec">

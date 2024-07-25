@@ -11,8 +11,8 @@ const Navbar = () => {
   const token = localStorage.getItem('token');
   
   const navArray = [{
-    name:"lottery",
-    url:token?"":""
+    name:"Lottery",
+    url:token?"":"/Lottery"
   
 
   },
@@ -30,23 +30,24 @@ const Navbar = () => {
   {
     name:"Live Casino",
     
-    url:token?"":""
+    url:token?"":"/Live-Casino"
 
   },
   {
     name:"Slots",
-    url:token?"":""
+    url:token?"":"/Slots"
 
   },
   {
     name:"Fantasy Game",
-    url:token?"":""
+    url:token?"":"/FantasyGame"
 
   },
 ];
 
   const handleTabClick = (url) => {
-    if(url){
+    console.log(url)
+    if(url || url == "/"){
       nav(url)
     }
     else{
