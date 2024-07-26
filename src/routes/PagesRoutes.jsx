@@ -8,6 +8,7 @@ import LiveCasino from "../Pages/Live-casino/LiveCasino.jsx";
 import FantasyGame from "../Pages/FantascyGame/FantasyGame.jsx";
 import Slots from "../Pages/Slots/Slots.jsx";
 import Lottery from "../Pages/Lottery/Lottery.jsx";
+import Profile from "../Pages/Profile/Profile.jsx";
 
 
 
@@ -49,6 +50,11 @@ export const router = createBrowserRouter([
         {
           path: "/Lottery",
           element: <Lottery />,
+
+        },
+        {
+          path: "/Profile",
+          element: <Profile />,
 
         },
         

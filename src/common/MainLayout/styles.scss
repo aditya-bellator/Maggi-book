@@ -14,6 +14,7 @@
         background-color: #23292D;
         @include mediaQuery(phone){
             gap: 0px;
+            height: calc(100% - 0px);
         }
         .main-layout-sider{
             width: 20%;

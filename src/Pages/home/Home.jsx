@@ -15,6 +15,8 @@ import GameCard from "../../component/game-card/GameCard";
 import {arry} from "../../common/MainLayout/json/json";
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import Navbar from "../../layout/navbar";
+import {useMediaQuery} from "../../useMediaQuery"
 
 // import  "../../assets/index";
 
@@ -52,7 +54,7 @@ const Home = () => {
   // Extract names from matchArray
   const names = matchArray.map(item => {item.name});
   const icon = matchArray.map(item => {item.icon});
-
+  const isMobile = useMediaQuery("(max-width:780px)")
   return (
     <>
    
@@ -62,6 +64,13 @@ const Home = () => {
         <div className="hero-sec">
           <SimpleSlider />
         </div>
+        {isMobile && 
+  
+
+        <Navbar />
+    
+        }
+       
         <div className="tabs">
           <div className="horizontal-scroll-container">
             <button onClick={scrollLeft} className="scroll-button left">

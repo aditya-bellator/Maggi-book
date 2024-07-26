@@ -46,7 +46,6 @@ const Navbar = () => {
 ];
 
   const handleTabClick = (url) => {
-    console.log(url)
     if(url || url == "/"){
       nav(url)
     }
@@ -60,18 +59,20 @@ const Navbar = () => {
   };
 
   return (
+    <>
     <div className='nav-main'>
       <ul className='menu-list'>
         {navArray.map((item, i) => (
           // <Link to={""} key={item}>
-            <li key={item?.name+i} className={i === activeTab ? 'active' : ''} onClick={() => handleTabClick(item?.url)}>
+          <li key={item?.name+i} className={i === activeTab ? 'active' : ''} onClick={() => handleTabClick(item?.url)}>
               {item?.name}
             </li>
           // </Link>
         ))}
       </ul>
-      <Login isOpen={isModalOpen} onClose={closeModal} />
     </div>
+      <Login isOpen={isModalOpen} onClose={closeModal} />
+        </>
   );
 };
 

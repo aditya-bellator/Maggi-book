@@ -36,9 +36,11 @@ const width = isMobile?"100%":checkLocation?"100%":"100%"
 console.log(width)
   return (
     <div className='main-layout'>
+    {!isMobile && 
       <div className="layout-nav-col">
         <Navbar />
       </div>
+        }
       <div className={`main-layout-col mt-[.3125rem] mr-[.3125rem] w-[${!checkLocation?"80%":"100%"}]`}>
 {!checkLocation  &&
       <div className={`${activeSider?"main-layout-sider-active":"main-layout-sider"}`} onClick={()=>setActiveSider(false)}>

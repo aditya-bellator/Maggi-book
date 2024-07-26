@@ -1,3 +1,5 @@
+@import "../../styles/variables/mixins";
+
 .live-casino {
     width: 97%;
     // display: flex;
@@ -11,14 +13,20 @@
       .fantacy-game {
         display: grid;
         margin-top: 60px;
-
-      
+        
+        
     grid-template-columns: repeat(7 , 1fr);
-  
-        gap: 8px;
+    
+    gap: 8px;
         .active{
           // color: rgb(253, 207, 19)!important;
           border: 1px solid white !important;
+        }
+        @media (max-width: 767px) {
+          margin-top: 10px;
+          grid-template-columns: repeat(3 , 1fr);
+         
+          
       }
         .gamecard {
           width: 100%;
