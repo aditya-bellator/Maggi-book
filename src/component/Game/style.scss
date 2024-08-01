@@ -14,20 +14,27 @@
     
     @media (max-width: 767px) {
         flex-direction: column;
-        margin-bottom: 5px;
-        width: 99%;
-        padding: 0;
+        width: calc(100% - 5%);
+        gap: 5px;
+        // background: red;
+        // margin-bottom: 5px;
+        // width: 99%;
+background: rgb(102, 102, 102);
+        margin: 2px auto;
+        padding: 5px;
     }
     .game-col-left{
         width: 60%;
+        // background: red;
         display: flex;
         padding: 16px 0;
         font-weight: 500;
         color: gray;
         @media (max-width: 767px) {
-          width: 99%;  
-          border:5px solid #666666;
+          width: 100%;  
+        //   border:5px solid #666666;
           justify-content: space-between;
+          background: #2E3438;
            
         }
         .day-live{
@@ -124,10 +131,11 @@
         display: flex;
        
         @media (max-width: 767px) {
-            width: 99%;  
+            width: 100%;  
             // border:5px solid #666666;
-            padding: 5px; 
-            background: #666666; 
+            // padding: 5px; 
+            background: rgb(102, 102, 102);
+            // background: #666666; 
           }
         .game1{
             width: 33.3%;

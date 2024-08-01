@@ -6,10 +6,11 @@ import MenuItem from '@mui/material/MenuItem';
 import EditIcon from '@mui/icons-material/Edit';
 import PersonIcon from '@mui/icons-material/Person';
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import MenuIcon from '@mui/icons-material/Menu';
+import HomeIcon from '@mui/icons-material/Home';
 import { Menu } from '@mui/material';
 import logos from "../../assets/logo.png"
 import { siderHandlerRef } from '../../common/MainLayout';
+import { Link } from 'react-router-dom';
 export const SubNav = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -33,10 +34,14 @@ export const SubNav = () => {
         <div className="sub-col-right">
           <div className="logo-menu">
             <div className="menu-icon" onClick={siderHandlerRef}>
-<MenuIcon/>
+<HomeIcon/>
             </div>
+
             <div className="logo-icon">
+             <Link to={"/"}>
               <img src={logos} alt="logo" />
+             </Link>
+           
             </div>
           </div>
           <div className="pts-sec">
@@ -69,7 +74,7 @@ export const SubNav = () => {
       >
         <MenuItem onClick={handleClose} disableRipple>
           
-          Profile
+         <Link to="/Profile"> Profile</Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           Account Statement

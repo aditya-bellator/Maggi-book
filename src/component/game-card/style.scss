@@ -1,7 +1,7 @@
 .gamecard{
     height: 90px;
     // min-height: 65px;
-    border: 1px solid white;
+    border: 1px solid rgb(170, 175, 181);
     width: 30%;
     border-radius: 2px;
    
@@ -18,9 +18,8 @@
         height: 50px;
         justify-content: center;
         img{
-            width: auto;
-            height: 27px;
-            margin-bottom: .5rem;
+            max-width: 90%;
+            height: 33px;
 
         
         }

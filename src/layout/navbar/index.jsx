@@ -11,8 +11,8 @@ const Navbar = () => {
   const token = localStorage.getItem('token');
   
   const navArray = [{
-    name:"lottery",
-    url:token?"":""
+    name:"Lottery",
+    url:token?"":"/Lottery"
   
 
   },
@@ -30,23 +30,23 @@ const Navbar = () => {
   {
     name:"Live Casino",
     
-    url:token?"":""
+    url:token?"":"/Live-Casino"
 
   },
   {
     name:"Slots",
-    url:token?"":""
+    url:token?"":"/Slots"
 
   },
   {
     name:"Fantasy Game",
-    url:token?"":""
+    url:token?"":"/FantasyGame"
 
   },
 ];
 
   const handleTabClick = (url) => {
-    if(url){
+    if(url || url == "/"){
       nav(url)
     }
     else{
@@ -59,18 +59,20 @@ const Navbar = () => {
   };
 
   return (
+    <>
     <div className='nav-main'>
       <ul className='menu-list'>
         {navArray.map((item, i) => (
           // <Link to={""} key={item}>
-            <li key={item?.name+i} className={i === activeTab ? 'active' : ''} onClick={() => handleTabClick(item?.url)}>
+          <li key={item?.name+i} className={i === activeTab ? 'active' : ''} onClick={() => handleTabClick(item?.url)}>
               {item?.name}
             </li>
           // </Link>
         ))}
       </ul>
-      <Login isOpen={isModalOpen} onClose={closeModal} />
     </div>
+      <Login isOpen={isModalOpen} onClose={closeModal} />
+        </>
   );
 };
 
