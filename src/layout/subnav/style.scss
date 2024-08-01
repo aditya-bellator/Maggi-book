@@ -185,16 +185,23 @@
 .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
     background: black !important;
     color: white !important;
-min-height: none !important;
-overflow-y: none !important;
+    min-height: none !important;
+    overflow-y: none !important;
     max-height: none !important;
 }
 .css-159wgzx-MuiDivider-root {
     border-color: rgb(117, 117, 117, .5)  !important;
 }
-.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
-    min-height: auto;
-    &:hover{
-        background: rgb(117, 117, 117, .5)!important;
-      }
+
+a{
+    text-decoration: none;
+    color: white !important;
+
+    .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+        min-height: auto;
+  
+        &:hover{
+            background: rgb(117, 117, 117, .5)!important;
+        }
+    }
 }

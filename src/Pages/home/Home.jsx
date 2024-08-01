@@ -59,7 +59,7 @@ const Home = () => {
     <>
    
   
-    <section>
+    <section className="Exchange-sec">
       <div className="main-left-container">
         <div className="hero-sec">
           <SimpleSlider />

@@ -72,29 +72,38 @@ export const SubNav = () => {
         open={open}
         onClose={handleClose}
       >
+        <Link to="/Profile">
         <MenuItem onClick={handleClose} disableRipple>
           
-         <Link to="/Profile"> Profile</Link>
+          Profile
         </MenuItem>
+        </Link>
+        <Link to="/AccountStatement">
         <MenuItem onClick={handleClose} disableRipple>
-          Account Statement
-        </MenuItem>
+        Account Statement
+        </MenuItem></Link>
+        <Link to="/CurrentBets"> 
         <MenuItem onClick={handleClose} disableRipple>
-          Current Bets
-        </MenuItem>
+        Current Bets
+        </MenuItem></Link>
+        <Link to="/ActivityLog"> 
         <MenuItem onClick={handleClose} disableRipple>
-          Activity Log
-        </MenuItem>
+         Activity Log
+        </MenuItem></Link>
+        <Link to="/SetButtonValue">
         <MenuItem onClick={handleClose} disableRipple>
-          Set Button Velue
-        </MenuItem>
+         Set Button Velue
+        </MenuItem></Link>
+        <Link to="/ChangePassword"> 
         <MenuItem onClick={handleClose} disableRipple>
-          Change Password
-        </MenuItem>
+        Change Password
+        </MenuItem></Link>
         <Divider sx={{ my: 0.5 }} />
+        <Link to=""> 
         <MenuItem onClick={handleClose} disableRipple>
           Log out
         </MenuItem>
+        </Link>
       </Menu>
 
             </div>
