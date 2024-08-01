@@ -8,6 +8,7 @@ import MatchOds from "../../component/matchoods/MatchOds";
 import Switch from "@mui/material/Switch";
 import Fancy from "../../component/fancy/Fancy";
 import {NotFound} from "../../assets/"
+import Betslip from "../../component/betslip/Betslip";
 
 const SportsDetails = () => {
   // State to track the switch's state
@@ -56,7 +57,9 @@ const label = { inputProps: { "aria-label": "Switch demo" } };
 
         <Footer />
       </div>
-      <div className="sport-details-right"></div>
+      <div className="sport-details-right">
+        <Betslip />
+      </div>
     </div>
   );
 };
