@@ -1,0 +1,56 @@
+@import "../../styles/variables/mixins";
+.Current-bets {
+  width: 100%;
+  background: #2e3438;
+  margin-top: 10px;
+  margin-bottom: 10px;
+.detailSearch {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: calc(100% - 30px);
+    margin: 10px auto;
+    justify-content: space-between;
+    display: flex;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      color: #aaafb5;
+      font-size: 25px;
+      font-weight: 600;
+      @media (max-width: 767px) {
+        padding-left: 8px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .search {
+      width: 30%;
+      position: relative;
+      display: flex;
+      @media (max-width: 767px) {
+        width: 98%;
+        margin: 5px auto;
+      }
+      svg {
+        position: absolute;
+        top: 15%;
+        right: 15px;
+        color: #aaafb5;
+      }
+      input {
+        width: 95%;
+
+        font-size: 14px;
+        padding: 8.5px 0px 8.5px 14px;
+        border: none;
+        background: #23292d;
+        color: #aaafb5;
+        border-radius: 5px;
+        outline: none;
+      }
+    }
+  }
+}

@@ -9,6 +9,11 @@ import FantasyGame from "../Pages/FantascyGame/FantasyGame.jsx";
 import Slots from "../Pages/Slots/Slots.jsx";
 import Lottery from "../Pages/Lottery/Lottery.jsx";
 import Profile from "../Pages/Profile/Profile.jsx";
+import AccountStatement from "../Pages/AccountStatement/AccountStatement.jsx";
+import CurrentBets from "../Pages/CurrentBet/CurrentBets.jsx";
+import ActivityLog from "../Pages/ActivityLog/ActivityLog.jsx";
+import SetButtonValue from "../Pages/SetButtonValue/SetButtonValue.jsx";
+import ChangePassword from "../Pages/ChangePassword/ChangePassword.jsx";
 
 
 
@@ -55,6 +60,31 @@ export const router = createBrowserRouter([
         {
           path: "/Profile",
           element: <Profile />,
+
+        },
+        {
+          path: "/AccountStatement",
+          element: <AccountStatement />,
+
+        },
+        {
+          path: "/CurrentBets",
+          element: <CurrentBets />,
+
+        },
+        {
+          path: "/ActivityLog",
+          element: <ActivityLog />,
+
+        },
+        {
+          path: "/SetButtonValue",
+          element: <SetButtonValue />,
+
+        },
+        {
+          path: "/ChangePassword",
+          element: <ChangePassword />,
 
         },
         

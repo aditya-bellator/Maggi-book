@@ -19,7 +19,7 @@ const MainLayout = () => {
   }
 siderHandlerRef = siderOpenHandler
 const {pathname} = useLocation()
-const locationArray = ["/Live-Casino","/Slots","/FantasyGame","/Lottery"]
+const locationArray = ["/Live-Casino","/AccountStatement","/CurrentBets","/ActivityLog","/Slots","/FantasyGame","/Lottery"]
 const checkLocation = locationArray.includes(pathname)
 useEffect(() => {
   if(activeSider){
