@@ -35,12 +35,12 @@ const MatchOds = () => {
     {
       name: "Third Player",
       games: [
-        { value1: '1.00', value2: '19.00',color: '#72bbef'  },
-        { value1: '1.00', value2: '19.00' },
-        { value1: '1.00', value2: '19.00' },
-        { value1: '1.00', value2: '19.00' },
-        { value1: '1.00', value2: '19.00' },
-        { value1: '1.00', value2: '19.00' }
+        { value1: '1.00', value2: '19.00', color: "#72bbef"  },
+        { value1: '1.00', value2: '19.00', color: "#72bbef"  },
+        { value1: '1.00', value2: '19.00', color: "#72bbef"  },
+        { value1: '1.00', value2: '19.00', color: "#b0728b"  },
+        { value1: '1.00', value2: '19.00', color: "#b0728b"  },
+        { value1: '1.00', value2: '19.00', color: "#b0728b"  }
       ]
     }
   ];
@@ -49,9 +49,15 @@ const MatchOds = () => {
     <div className="matchods-main">
       <div className="matchods-togel" onClick={toggle}>
         <div className="matchods">
+      
+
           {!isOpen ? <FaAngleRight /> : <FaChevronDown />}
+          <div className="data">
           <p>Match Odds</p>
-        </div>
+            
+          <p className="max-min">Max: 10K Min:100 Bet Delay: 5</p>
+          </div>
+          </div>
         </div>
 
         {isOpen && (

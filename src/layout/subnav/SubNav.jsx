@@ -10,7 +10,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import { Menu } from '@mui/material';
 import logos from "../../assets/logo.png"
 import { siderHandlerRef } from '../../common/MainLayout';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 export const SubNav = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -20,8 +20,16 @@ export const SubNav = () => {
     const handleClose = () => {
       setAnchorEl(null);
     };
+    const {pathname} = useLocation()
+const locationArray = ["/Live-Casino","/AccountStatement","/CurrentBets","/ActivityLog","/Slots","/FantasyGame","/Lottery"]
+const checkLocation = locationArray.includes(pathname)
   return (
     <div className="sub-nav">
+      {checkLocation &&
+      <div className="logo-nav">
+        <img src={logos} alt="logo" />
+      </div>
+      }
         <div className="sub-col-left">
             <div className="marquee-sec">
             <marquee>WELCOME</marquee>

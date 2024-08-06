@@ -54,10 +54,11 @@ import WOO from "../assets/internation-casino/WOO.svg";
 import SPB from "../assets/internation-casino/SPB.svg";
 import KIR from "../assets/internation-casino/KIR.png";
 import commingsoon from "../assets/internation-casino/commingsoon.gif";
+import Speaker from "../assets/speaker.svg";
 
 
 
 
 
 
-export {KIR,SPB,commingsoon,NotFound,img1,img2,MAV,OT,SWL,WOO,RG,VGL,TPG,WAZ,SWC,RTG,RLG,SHS,RLX,PRS,RED,QS,PP,PUG,PPC,PNG,MNP,OPY,MOB,NE,NLC,NGE ,img3,img4,img5, x, mc,bng , bpg,btg ,BTL,BTV,CQC,DS,ELK,EVP,EZU,FNG,FUG,GA,GMC,GZX,HAB,HAK,IDS,KGL,}
+export {KIR,SPB,commingsoon,Speaker,NotFound,img1,img2,MAV,OT,SWL,WOO,RG,VGL,TPG,WAZ,SWC,RTG,RLG,SHS,RLX,PRS,RED,QS,PP,PUG,PPC,PNG,MNP,OPY,MOB,NE,NLC,NGE ,img3,img4,img5, x, mc,bng , bpg,btg ,BTL,BTV,CQC,DS,ELK,EVP,EZU,FNG,FUG,GA,GMC,GZX,HAB,HAK,IDS,KGL,}

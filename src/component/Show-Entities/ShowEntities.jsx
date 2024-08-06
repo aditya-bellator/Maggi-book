@@ -7,7 +7,7 @@ import Select from '@mui/material/Select';
 // import "./style.scss"
 
 export default function ShowEntities() {
-  const [age, setAge] = React.useState('');
+  const [age, setAge] = React.useState('25');
 
   const handleChange = (event) => {
     setAge(event.target.value);
