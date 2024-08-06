@@ -14,6 +14,7 @@ import CurrentBets from "../Pages/CurrentBet/CurrentBets.jsx";
 import ActivityLog from "../Pages/ActivityLog/ActivityLog.jsx";
 import SetButtonValue from "../Pages/SetButtonValue/SetButtonValue.jsx";
 import ChangePassword from "../Pages/ChangePassword/ChangePassword.jsx";
+import Auth from "../Pages/authSecure/Auth.jsx";
 
 
 
@@ -85,6 +86,11 @@ export const router = createBrowserRouter([
         {
           path: "/ChangePassword",
           element: <ChangePassword />,
+
+        },
+        {
+          path: "/auth",
+          element: <Auth />,
 
         },
         

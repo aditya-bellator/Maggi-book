@@ -1,0 +1,97 @@
+.changepassword {
+  position: absolute;
+  top: 140px;
+  left: 398px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 444px;
+  background: #666666;
+
+  .main-change {
+    width: calc(100% - 20px);
+    margin: auto;
+    // max-height: calc(100vh - 100px);
+    // overflow: hidden;
+    // overflow-y: scroll;
+    // background: #3F384C;
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0px;
+      h2 {
+        margin: 0;
+        padding: 0px;
+        font-weight: 500;
+        font-size: 16px;
+
+        color: #fdcf13;
+      }
+      .close-button {
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+
+        color: rgb(158, 158, 158);
+      }
+    }
+    .form-main{
+        // width: 100%;
+        background-color: #3f384c;
+        padding: 10px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+        .input-group{
+
+            input{
+                width: 100%;
+                padding: 15px 0px 15px 5px;
+                align-items: center;
+                background-color: #111416;
+                color: #6d7174;
+                border: none;
+                border-radius: 5px;
+                border: 1px solid #6d7174;
+                &:hover {
+                    border: 1px solid #fff;
+                  }
+                &:focus {
+                 
+      
+                    outline: none;
+                    border:2px solid yellow !important;
+                    color: yellow;
+                  }
+
+            }
+
+
+        }
+
+    }
+    .submit-button {
+        width: 100%;
+        width: calc(100% - 20px);
+        margin: auto;
+        padding: 10px;
+  
+        button{
+          width: 100%;
+          background-color: rgb(14, 104, 78);
+          border-radius: 5px;
+          padding: 10px 0px;
+          color: #fff;
+          border: none;
+          button:hover {
+              background: #094836;
+            }
+        }
+      }
+  }
+}
