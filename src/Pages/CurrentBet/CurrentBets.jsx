@@ -2,7 +2,11 @@ import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import ShowEntities from '../../component/Show-Entities/ShowEntities';
 import { useState } from 'react';
+import Footer from "../../layout/footer/Footer";
+
 import "./style.scss"
+import Pagination from '../../component/Pagination/Pagination';
+import Marquee from '../../layout/subnav/marquee/Marquee';
 const CurrentBets = () => {
 
   // const CustomRadioButtons = () => {
@@ -23,6 +27,7 @@ const CurrentBets = () => {
   return (
   <>
    <div className='Current-bets'>
+    <Marquee/>
      <div className="detailSearch">
         <p>Current Bets</p>
         <div className="search">
@@ -108,7 +113,7 @@ const CurrentBets = () => {
       </div>
       <div className='matched-deleted'>
   <div className="matched">
-  <input type="radio" id="All" name="fav_language" value="All" checked className='input-checked'
+  <input type="radio" id="All" name="fav_language" value="All" className='input-checked'
   onChange={()=>handleChangeback("All")}
   style={{
             appearance: 'none',
@@ -122,7 +127,7 @@ const CurrentBets = () => {
             cursor: 'pointer',
             border: '1px solid #aaafb5'
           }}/>
-<label for="html">All</label>
+<label>All</label>
 
  <input type="radio" id="Back" name="fav_language" value="Back" className='input-checked' 
   onChange={()=>handleChangeback("Back")}
@@ -138,7 +143,7 @@ style={{
             cursor: 'pointer',
             border: '1px solid #aaafb5'
           }}/>
-<label for="Back">Back</label>
+<label>Back</label>
 {/* <br/> */}
  <input type="radio" id="Lay" name="fav_language" value="Lay"
   onChange={()=>handleChangeback("Lay")}
@@ -154,7 +159,7 @@ className='input-checked' style={{
             cursor: 'pointer',
             border: '1px solid #aaafb5'
           }}/>
-  <label for="Lay">Lay</label>
+ <label>Lay</label>
     </div>
     </div>
     <div className="totalBetaAmount">
@@ -164,7 +169,56 @@ className='input-checked' style={{
     </div>
     </div>
 
+    <div className="accountStatementTable">
+    <table className='Statement'> 
+      <thead>
+  <tr>
+    <th >Sports</th>
+    <th>Event name</th>
+    <th>market name</th>
+    <th>nation</th>
+    <th>user rate</th>
+    <th>price value</th>
+    <th>amount</th>
+    <th>place date</th>
+    <th>Action</th>
+  
+  </tr>
+  </thead>
+  <tbody>
+    {[1,2,3,4,5,6,7,8,9,10,11,12].map((itm)=>{
+      return(
+
+    <tr key={itm}>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+    <td>Mexico</td>
+    <td>Mexico</td>
+    <td>Mexico</td>
+    <td>Mexico</td>
+    <td>Mexico</td>
+    <td>Mexico</td>
+    </tr>
+      )
+    })}
+   
+  </tbody>
+</table>
+
+
       </div>
+
+
+
+
+
+
+
+      </div>
+<div className="footer">
+  <Footer/>
+</div>
   </>
   )
 }

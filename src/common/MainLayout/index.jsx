@@ -25,7 +25,7 @@ useEffect(() => {
   if(activeSider){
     document.body.style.overflow = 'hidden';
   }else{
-    document.body.style.overflowY = 'scroll';
+    // document.body.style.overflowY = 'scroll';
 
   }
 }, [activeSider])

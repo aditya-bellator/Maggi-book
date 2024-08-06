@@ -6,7 +6,7 @@ import ResponsiveDatePickers from '../../component/date-picker/ResponsiveDatePic
 import Selector from '../../component/Selector/Selector';
 import ShowEntities from '../../component/Show-Entities/ShowEntities';
 import Pagination from '../../component/Pagination/Pagination';
-
+import Marquee from '../../layout/subnav/marquee/Marquee';
 
 
 const AccountStatement = () => {
@@ -26,6 +26,7 @@ const AccountStatement = () => {
   return (
     <>
     <div className='AccountStatement'>
+      <Marquee/>
       <div className="detailSearch">
         <p>Account Statement</p>
         <div className="search">

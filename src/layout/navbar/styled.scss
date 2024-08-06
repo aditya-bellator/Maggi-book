@@ -4,15 +4,13 @@
     background: #762e56;
     @media (max-width: 767px) {
      
-        background:red;
+        background:transparent;
         font-size: 8px;
-        width: calc(100% - 10px);
-        margin: 0 auto;
+        width: calc(100% - 0px);
+        margin: 8px auto;
         padding: 0 10px;
-     
-        
-      
-        }
+          overflow-x: scroll;
+     }
     .menu-list{
         display: flex;
         margin: 0%;
@@ -23,11 +21,10 @@ align-items: center;
 @media (max-width: 767px) {
     gap: 0px;
     height: 40px;
-    // border-radius: 8px;
-    width: auto;
-    padding: 0 10px;
-    overflow-x: scroll;
-   
+    width: 90%;
+    padding-left: 10px;
+    // margin: 0 5%;
+  
 }
 
     li{
@@ -60,6 +57,15 @@ align-items: center;
      }
      &:last-child{
         border-right: none;
+        padding-right: 20px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+     }
+     &:first-child{
+        border-right: none;
+        padding-left: 20px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
      }
          // display: none
              

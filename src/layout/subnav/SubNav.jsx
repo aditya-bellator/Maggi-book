@@ -3,7 +3,6 @@ import "./style.scss";
 import Speaker from "../../assets/speaker.svg";
 import Divider from "@mui/material/Divider";
 import MenuItem from "@mui/material/MenuItem";
-import EditIcon from "@mui/icons-material/Edit";
 import PersonIcon from "@mui/icons-material/Person";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import HomeIcon from "@mui/icons-material/Home";

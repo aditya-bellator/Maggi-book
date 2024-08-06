@@ -1,3 +1,4 @@
+@import "../../styles/variables/mixins";
 .fancy-main {
     width: 100%;
     background-color: #2e3438;
@@ -17,6 +18,10 @@
       background-color: rgb(102, 102, 102);
       p {
         font-size: 14px;
+        @media (max-width: 767px) {
+          padding: 8px 0;
+          margin: 0;
+                  }
       }
     }
     .container-fancy{
@@ -34,6 +39,14 @@ margin: auto auto;
             width: 52%;
             display: flex;
             justify-content: end;
+            @media (max-width: 767px) {
+                width: 100%;
+             &:last-child{
+                display: none;
+             }
+         
+                    }
+
             .fback-yes{
                 width: 48%;
                 // background: green;
@@ -61,6 +74,10 @@ margin: auto auto;
         margin: 2px auto;
         padding-bottom: 10px;
         grid-template-columns: repeat(2 , 1fr);
+        @media (max-width: 767px) {
+              grid-template-columns: repeat(1, 1fr);
+       
+                  }
       
         .fanback-left{
             width: 100%;
@@ -90,10 +107,10 @@ margin: auto auto;
                     gap: 5px;
                     .game{
                         width: 49%;
-                        background: #b0728b;
+                        background-color: #72bbef;
                         border-radius: 4px;
                         &:first-child{
-                            background-color: #72bbef;
+                            background: #b0728b;
                         }
                         p{
                             margin: 0;

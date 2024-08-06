@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 // import Accordian from "../../component/Accordian"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import AccessAlarmsIcon from "@mui/icons-material/AccessAlarms";
+import logos from "../../assets/logo.png"
+
 import "./styles.scss";
 import { useState } from "react";
 
@@ -28,12 +30,12 @@ const Sider = () => {
   return (
     <div className="main-sider" onClick={(e)=>e.stopPropagation()}>
       <div className="logo">
-        <img src={""} alt="logo" />
+        <img src={logos} alt="logo" />
       </div>
       <div className="menu-links">
         <ul>
           <Link>
-            <li>DASHBOARD</li>
+            <li> DASHBOARD</li>
           </Link>
           <Link>
             <li>LIVE CASINO</li>

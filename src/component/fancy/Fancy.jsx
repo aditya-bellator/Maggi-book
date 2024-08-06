@@ -28,7 +28,7 @@ const Fancy = () => {
         {isOpen && (
         <div className="container-fancy">
           <div className="fback">
-            <div className="fback-left">
+            <div className="fback-left fback-main">
                 <div className="fback-yes">
 
               <span>No</span>
