@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import "./bet.scss";
 import { MdClear } from "react-icons/md";
 
+
+
 const SetBetValue = ({ onClose }) => {
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      onClose(); // Close the modal if the click is on the overlay
+    }
+  };
 
   const [priceValues, setPriceValues] = useState([
     { id: 1, label: "Value 1", amount: 1000 },
@@ -26,8 +33,9 @@ const SetBetValue = ({ onClose }) => {
     );
   };
 
+
   return (
-    <div className="betvalue">
+    <div className="betvalue" onClick={handleOverlayClick}>
       <div className="set">
         <div className="modal-button_n">
           <h2>Set Button Value</h2>

@@ -1,16 +1,18 @@
 .betvalue {
-  position: absolute;
-  top: 33px;
-  left: 359px;
+  position: fixed; 
+  top: 30; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-  width: 555px;
-  background-color: #2e3438;
+  z-index: 1000; 
+  background: rgba(0, 0, 0, 0.5); 
   .set {
-    width: 100%;
-    color: white;
+    width: calc(100% - 30px);
+    max-width: 550px; 
+    background-color: #2e3438;
     max-height: calc(100vh - 100px);
     overflow: hidden;
     overflow-y: scroll;
@@ -146,7 +148,7 @@
         padding: 10px 0px;
         color: #fff;
         border: none;
-        button:hover {
+        &:hover {
             background: #094836;
           }
       }
