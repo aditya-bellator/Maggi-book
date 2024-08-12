@@ -3,7 +3,11 @@
     .profile-detail{
         padding: 0px 30px 30px 30px;
         color: #aaafb5;
-        @media (max-width: 767px) {
+        @media (min-width: 992px) and (max-width: 1199px) {
+          padding: 0 0 0 0;
+          margin-bottom: 40px;
+            }
+            @media (max-width: 767px){
           padding: 0 0 0 0;
           margin-bottom: 40px;
             }
@@ -26,12 +30,15 @@
             }
         }
         .user{
-
+            @media (max-width: 767px){
+                // padding: 0 0 0 0;
+                margin-bottom: 200px;
+                  }
             .user-detail{
                 display: flex;
                 padding-bottom: 2px;
                 border-bottom: 1px solid #aaafb5;
-                font-size: 16px;
+                font-size: 12px;
                 gap: 2%;
                 P{
                     width: 49%;

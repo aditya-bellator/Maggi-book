@@ -22,11 +22,13 @@
           // color: rgb(253, 207, 19)!important;
           border: 1px solid white !important;
         }
-        @media (max-width: 767px) {
+        @media (min-width: 992px) and (max-width: 1199px) {
           margin-top: 10px;
-          grid-template-columns: repeat(3 , 1fr);
-         
-          
+          grid-template-columns: repeat(3 , 1fr);     
+      }
+      @media (max-width: 767px){
+          margin-top: 10px;
+          grid-template-columns: repeat(3 , 1fr);     
       }
         .gamecard {
           width: 100%;
@@ -44,6 +46,20 @@
           }
         }
       }
+    }
+  }
+  .fantacy-game-icon{
+    width: 96%;
+    display: grid;
+    gap: 15px;
+    margin: 35px auto;
+    grid-template-columns: repeat(5, 1fr);
+    @media (max-width: 767px){
+      grid-template-columns: repeat(1, 1fr);
+      width: 90%;      
+    }
+    img{
+      width: 100%;
     }
   }
  

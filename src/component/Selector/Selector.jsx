@@ -21,7 +21,22 @@ export default function Selector() {
           value={age}
           onChange={handleChange}
           displayEmpty
-  sx={{p: 0, '& .MuiOutlinedInput-input': {p: "7px 10px", color:"#aaafb5"}}}
+          sx={{
+            p: 0,
+            '& .MuiOutlinedInput-input': {
+              p: "7px 10px",
+              color: "#aaafb5"
+            },
+            '& .MuiOutlinedInput-notchedOutline': {
+              borderColor: '#aaafb5'
+            },
+            '&:hover .MuiOutlinedInput-notchedOutline': {
+              borderColor: '#aaafb5'
+            },
+            '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+              borderColor: 'yellow'
+            }
+          }}
         >
           <MenuItem value="" >
             ALL

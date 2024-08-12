@@ -12,16 +12,16 @@ const SetBetValue = ({ onClose }) => {
   };
 
   const [priceValues, setPriceValues] = useState([
-    { id: 1, label: "Value 1", amount: 1000 },
-    { id: 2, label: "Value 2", amount: 2000 },
-    { id: 3, label: "Value 3", amount: 3000 },
-    { id: 4, label: "Value 4", amount: 4000 },
-    { id: 5, label: "Value 5", amount: 5000 },
-    { id: 6, label: "Value 6", amount: 6000 },
-    { id: 7, label: "Value 7", amount: 7000 },
-    { id: 8, label: "Value 8", amount: 8000 },
-    { id: 9, label: "Value 9", amount: 9000 },
-    { id: 10, label: "Value 10", amount: 10000 },
+    { id: 1, label: "stack 1", amount: 1000 },
+    { id: 2, label: "stack 2", amount: 2000 },
+    { id: 3, label: "stack 3", amount: 3000 },
+    { id: 4, label: "stack 4", amount: 4000 },
+    { id: 5, label: "stack 5", amount: 5000 },
+    { id: 6, label: "stack 6", amount: 6000 },
+    { id: 7, label: "stack 7", amount: 7000 },
+    { id: 8, label: "stack 8", amount: 8000 },
+    { id: 9, label: "stack 9", amount: 9000 },
+    { id: 10, label: "stack 10", amount: 10000 },
   ]);
 
 
@@ -43,7 +43,8 @@ const SetBetValue = ({ onClose }) => {
             <MdClear />
           </button>
         </div>
-        <div>
+
+        <div className="set-value-btn-sec">
           <div className="gameButtons">
             <button type="submit">gameButtons</button>
           </div>
@@ -56,6 +57,7 @@ const SetBetValue = ({ onClose }) => {
                 <span>Price value</span>
               </div>
             </div>
+            
             {priceValues.map(({ id, label, amount }) => (
               <div key={id} className="stack-price">
                 <div className="stack-price-half">

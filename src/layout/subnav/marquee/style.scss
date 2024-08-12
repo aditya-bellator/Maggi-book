@@ -4,13 +4,19 @@
     background: #444444;
     display: none;
     
-    @media (max-width: 767px) {
+    @media (min-width: 992px) and (max-width: 1199px) {
     width: 95%;
     border-radius: 5px;
     display: flex;
-    
     margin: 0 2.5%;
-    padding: 3px 0;     
+    padding: 1px 0;     
+    }
+    @media (max-width: 767px) {
+    width: 96%;
+    border-radius: 5px;
+    display: flex;
+    margin: 0 2.5%;
+    padding: 1px 0;     
     }
 .marquee-sec{
 width: 95%;

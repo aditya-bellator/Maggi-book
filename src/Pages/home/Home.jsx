@@ -22,17 +22,18 @@ import {useMediaQuery} from "../../useMediaQuery"
 
 const Home = () => {
   const matchArray = [
-    { name: "In Play", color: "gray", icon: <AccessAlarmsIcon />  },
-    { name: "Cricket", color: "rgb(32, 50, 123)", icon: <SportsCricketIcon /> },
-    { name: "Tennis", color: "rgb(241, 133, 33)", icon: <SportsBaseballIcon /> },
-    { name: "Football", color: "rgb(3, 179, 127)", icon: <SportsSoccerIcon /> },
-    { name: "Horse Racing", color: "rgb(158, 64, 37)", icon: <AccessAlarmsIcon /> },
+    { name: "In Play", color: "gray", icon: <AccessAlarmsIcon /> , textcolor:"white" },
+    { name: "Cricket", color: "rgb(32, 50, 123)", icon: <SportsCricketIcon /> , textcolor:"white"},
+    { name: "Tennis", color: "rgb(241, 133, 33)", icon: <SportsBaseballIcon />, textcolor:"white" },
+    { name: "Football", color: "rgb(3, 179, 127)", icon: <SportsSoccerIcon /> , textcolor:"white"},
+    { name: "Horse Racing", color: "rgb(158, 64, 37)", icon: <AccessAlarmsIcon />, textcolor:"white" },
   ];
 
   const [selectedGame, setSelectedGame] = useState("In Play");
   const [selectedGameIcon, setSelectedGameIcon] = useState(<AccessAlarmsIcon />);
   
   const [color, setColor] = useState("gray");
+  const [textcolor, setTextColor] = useState("white");
   const scrollContainerRef = useRef(null);
 
   const scrollLeft = () => {
@@ -83,13 +84,14 @@ const Home = () => {
                   className="item"
                   key={item?.name}
                   style={{
-                    backgroundColor: item?.name === selectedGame ? item?.color : "",
+                    backgroundColor: item?.name === selectedGame ? item?.color : "", color: item?.name === selectedGame ? item?.textcolor : ""
                   }}
                   onClick={() => {
                     
                     setSelectedGameIcon(item?.icon);
                     setSelectedGame(item?.name);
                     setColor(item?.color);
+                    setTextColor(item?.textcolor);
                   }}
                   >
                     <span className="tab-name-icon"> {item?.icon}</span>{item?.name}
@@ -101,7 +103,7 @@ const Home = () => {
               <KeyboardArrowRightIcon/>
             </button>
           </div>
-          <div
+          <div className="game-area"
             style={{ width: "100%", backgroundColor: color }}
           >
             <GameTitle names={[selectedGame]} icon={[selectedGameIcon]} />

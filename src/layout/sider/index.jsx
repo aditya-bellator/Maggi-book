@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 // import Accordian from "../../component/Accordian"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import AccessAlarmsIcon from "@mui/icons-material/AccessAlarms";
+import MenuIcon from '@mui/icons-material/Menu';
+
 import logos from "../../assets/logo.png"
 
 import "./styles.scss";
 import { useState } from "react";
+import { colors } from "@mui/material";
 
 const Sider = () => {
   const fruits = [
@@ -13,16 +16,24 @@ const Sider = () => {
       id: 1,
       icon: <AccessAlarmsIcon />,
       name: "InPlay",
+      iconColor:"white",
+      BackgroundColor:""
+      
+
     },
     {
       id: 2,
       icon: <AccessAlarmsIcon />,
       name: "Cricket",
+      iconColor:"rgb(3, 179, 127)",
+      BackgroundColor:""
     },
     {
       id: 3,
       icon: <AccessAlarmsIcon />,
       name: "Tennis",
+      iconColor:"rgb(32, 50, 123)",
+      BackgroundColor:""
     },
   ];
   const [togle, setTogle] = useState(false);
@@ -31,6 +42,9 @@ const Sider = () => {
     <div className="main-sider" onClick={(e)=>e.stopPropagation()}>
       <div className="logo">
         <img src={logos} alt="logo" />
+        <div className="icon-menu">
+<MenuIcon/>
+        </div>
       </div>
       <div className="menu-links">
         <ul>
@@ -49,14 +63,14 @@ const Sider = () => {
             <ul>
               {fruits.map((fruit) => (
                 <div key={fruit}>
-                  <li onClick={() => setTogle1((prev)=>{
+                  <li style={{background:fruit.BackgroundColor}} onClick={() => setTogle1((prev)=>{
                     const name = fruit?.name
                     return{
                       ...prev,[name]:!togle1[fruit?.name]
                     }
                   })} key={fruit}>
                     
-                      <span>{fruit.icon}</span>
+                      <span style={{color:fruit.iconColor,}}>{fruit.icon}</span>
                    {fruit.name} 
                     
                     <span><KeyboardArrowDownIcon /></span>

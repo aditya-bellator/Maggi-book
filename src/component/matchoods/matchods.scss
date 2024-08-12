@@ -17,31 +17,44 @@ display: flex;
     border-radius: 8px 8px 0px 0px;
     min-height: 25px;
     background-color: rgb(102, 102, 102);
-    @media (max-width: 767px) {
+    @media (min-width: 992px) and (max-width: 1199px) {
       min-height: 15px;
       margin: 0;
-      // justify-content: space-between;
+    }
+    @media (max-width: 767px){
+      min-height: 15px;
+      margin: 0;
     }
      .data{
 display: flex;
 justify-content: space-between;
 
 width: 98%;
-@media (max-width: 767px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  padding: 8px 0;
+}
+@media (max-width: 767px){
 
   padding: 8px 0;
 }
 .max-min{
   display: none;
-  @media (max-width: 767px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
+
+    display: inline-flex;
+  }
+  @media (max-width: 767px){
 
     display: inline-flex;
   }
 }
        p {
          font-size: 14px;
-         @media (max-width: 767px) {
-
+         @media (min-width: 992px) and (max-width: 1199px) {
+          margin: auto 0;
+        }
+        @media (max-width: 767px){
           margin: auto 0;
         }
          &:last-child{
@@ -55,7 +68,11 @@ width: 98%;
     width: 100%;
     display: flex;
     justify-content: end;
-    @media (max-width: 767px) {
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+      display: none;
+    }
+    @media (max-width: 767px){
 
       display: none;
     }
@@ -94,21 +111,32 @@ width: 98%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 767px) {
-
+    @media (min-width: 992px) and (max-width: 1199px) {
+      flex-direction: column;
+      align-items: start;
+    }
+    @media (max-width: 767px){
       flex-direction: column;
       align-items: start;
     }
     .layback-left {
       width: 40%;
       padding: 0px 10px;
-      @media (max-width: 767px) {
+      @media (min-width: 992px) and (max-width: 1199px) {
+        width: 100%;
+        padding: 0px 0px;
+              }
+              @media (max-width: 767px){
         width: 100%;
         padding: 0px 0px;
               }
       p {
         color: rgb(170, 175, 181);
-        @media (max-width: 767px) {
+        @media (min-width: 992px) and (max-width: 1199px) {
+        margin: 0;
+        padding: 4px 0;
+                }
+                @media (max-width: 767px){
         margin: 0;
         padding: 4px 0;
                 }
@@ -119,7 +147,10 @@ width: 98%;
 
       display: flex;
       gap: 2px;
-      @media (max-width: 767px) {
+      @media (min-width: 992px) and (max-width: 1199px) {
+width: 100%;
+      }
+      @media (max-width: 767px){
 width: 100%;
       }
       .game {
@@ -138,9 +169,12 @@ width: 100%;
           padding: 0;
           text-align: center;
           font-size: 12px;
-          font-weight: 500;
+          height: 40%;
+          margin: 2.1% 0;
+          // font-weight: bold;
+          font-weight: 800;
           &:nth-of-type(2) {
-            font-weight: 800;
+            font-weight: 400;
           }
         }
       }

@@ -55,10 +55,23 @@ import SPB from "../assets/internation-casino/SPB.svg";
 import KIR from "../assets/internation-casino/KIR.png";
 import commingsoon from "../assets/internation-casino/commingsoon.gif";
 import Speaker from "../assets/speaker.svg";
+import avi from './fancy-img/avi.jpeg'
+import di from './fancy-img/di.jpeg'
+import go from './fancy-img/go.jpeg'
+import hi from './fancy-img/hi.jpeg'
+import ho from './fancy-img/ho.jpeg'
+import mi from './fancy-img/mi.jpeg'
+import mr from './fancy-img/mr.jpeg'
+import pi from './fancy-img/pi.jpeg'
+import gpay from './payment/gpay.png'
+import paytm from './payment/paytm.png'
+import phonepay from './payment/phonepay.png'
+import upi from './payment/upi.png'
 
 
 
 
 
 
-export {KIR,SPB,commingsoon,Speaker,NotFound,img1,img2,MAV,OT,SWL,WOO,RG,VGL,TPG,WAZ,SWC,RTG,RLG,SHS,RLX,PRS,RED,QS,PP,PUG,PPC,PNG,MNP,OPY,MOB,NE,NLC,NGE ,img3,img4,img5, x, mc,bng , bpg,btg ,BTL,BTV,CQC,DS,ELK,EVP,EZU,FNG,FUG,GA,GMC,GZX,HAB,HAK,IDS,KGL,}
+
+export {KIR,avi,gpay,paytm,phonepay,upi,di,go,hi,ho,mi,mr,pi,SPB,commingsoon,Speaker,NotFound,img1,img2,MAV,OT,SWL,WOO,RG,VGL,TPG,WAZ,SWC,RTG,RLG,SHS,RLX,PRS,RED,QS,PP,PUG,PPC,PNG,MNP,OPY,MOB,NE,NLC,NGE ,img3,img4,img5, x, mc,bng , bpg,btg ,BTL,BTV,CQC,DS,ELK,EVP,EZU,FNG,FUG,GA,GMC,GZX,HAB,HAK,IDS,KGL,}

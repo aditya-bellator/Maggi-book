@@ -13,34 +13,34 @@ const MatchOds = () => {
     {
       name: "Jana Fett",
       games: [
-        { value1: "1.00", value2: "19.00", color: "#72bbef" },
-        { value1: "1.00", value2: "19.00", color: "#72bbef" },
-        { value1: "1.00", value2: "19.00", color: "#72bbef" },
-        { value1: "1.00", value2: "19.00", color: "#b0728b" },
-        { value1: "1.00", value2: "19.00", color: "#b0728b" },
-        { value1: "1.00", value2: "19.00", color: "#b0728b" },
+        { value1: "1.00", value2: "19.00", color: "rgba(114, 187, 239, 0.64)" },
+        { value1: "1.00", value2: "19.00", color: "rgba(114, 187, 239, 0.8)" },
+        { value1: "1.00", value2: "19.00", color: "rgb(114, 187, 239)" },
+        { value1: "1.00", value2: "19.00", color: "rgb(249, 148, 186)" },
+        { value1: "1.00", value2: "19.00", color: "rgba(249, 148, 186, 0.8)" },
+        { value1: "1.00", value2: "19.00", color: "rgba(249, 148, 186, 0.64)" },
       ],
     },
     {
       name: "Another Player",
       games: [
-        { value1: "1.00", value2: "19.00", color: "#72bbef" },
-        { value1: "1.00", value2: "19.00", color: "#72bbef" },
-        { value1: "1.00", value2: "19.00", color: "#72bbef" },
-        { value1: "1.00", value2: "19.00", color: "#b0728b" },
-        { value1: "1.00", value2: "19.00", color: "#b0728b" },
-        { value1: "1.00", value2: "19.00", color: "#b0728b" },
+        { value1: "1.00", value2: "19.00", color: "rgba(114, 187, 239, 0.64)" },
+        { value1: "1.00", value2: "19.00", color: "rgba(114, 187, 239, 0.8)" },
+        { value1: "1.00", value2: "19.00", color: "rgb(114, 187, 239)" },
+        { value1: "1.00", value2: "19.00", color: "rgb(249, 148, 186)" },
+        { value1: "1.00", value2: "19.00", color: "rgba(249, 148, 186, 0.8)" },
+        { value1: "1.00", value2: "19.00", color: "rgba(249, 148, 186, 0.64)" },
       ],
     },
     {
       name: "Third Player",
       games: [
-        { value1: '1.00', value2: '19.00', color: "#72bbef"  },
-        { value1: '1.00', value2: '19.00', color: "#72bbef"  },
-        { value1: '1.00', value2: '19.00', color: "#72bbef"  },
-        { value1: '1.00', value2: '19.00', color: "#b0728b"  },
-        { value1: '1.00', value2: '19.00', color: "#b0728b"  },
-        { value1: '1.00', value2: '19.00', color: "#b0728b"  }
+        { value1: '1.00', value2: '19.00', color: "rgba(114, 187, 239, 0.64)"  },
+        { value1: '1.00', value2: '19.00', color: "rgba(114, 187, 239, 0.8)"  },
+        { value1: '1.00', value2: '19.00', color: "rgba(114, 187, 239)"  },
+        { value1: '1.00', value2: '19.00', color: "rgb(249, 148, 186)"  },
+        { value1: '1.00', value2: '19.00', color: "rgba(249, 148, 186, 0.8)"  },
+        { value1: '1.00', value2: '19.00', color: "rgba(249, 148, 186, 0.64)"  }
       ]
     }
   ];

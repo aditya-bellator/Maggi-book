@@ -3,6 +3,7 @@ import GameCard from '../../component/game-card/GameCard'
 import {arry} from "../../common/MainLayout/json/json";
 import "./style.scss"
 import { useMediaQuery } from '../../useMediaQuery';
+import { avi, di, go, hi, ho, mi, mr, pi } from '../../assets';
 const FantasyGame = () => {
     const findData = arry?.filter((elm)=>elm?.name == "fantasy game")
     const [activeTab, setActiveTab] = useState(0);
@@ -27,6 +28,20 @@ const FantasyGame = () => {
                 )
               })}
               </div>
+
+
+              <div className="fantacy-game-icon">
+
+                <img src={avi} alt="avi" />
+                <img src={di} alt="di" />
+                <img src={go} alt="go" />
+                <img src={hi} alt="hi" />
+                <img src={ho} alt="ho" />
+                <img src={mi} alt="mi" />
+                <img src={mr} alt="mr" />
+                <img src={pi} alt="pi" />
+              </div>
+
       </>
     )
   }

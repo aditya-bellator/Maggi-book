@@ -5,11 +5,12 @@ import Divider from "@mui/material/Divider";
 import MenuItem from "@mui/material/MenuItem";
 import PersonIcon from "@mui/icons-material/Person";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import HomeIcon from "@mui/icons-material/Home";
+import HomeIcon from '@mui/icons-material/Home';
+import MenuIcon from '@mui/icons-material/Menu';
 import { Menu } from "@mui/material";
 import logos from "../../assets/logo.png";
 import { siderHandlerRef } from "../../common/MainLayout";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SetBetValue from "../../component/setBetValue/SetBetValue";
 import ChangePassword from "../../component/changepassword/ChangePassword"
 export const SubNav = () => {
@@ -17,6 +18,10 @@ export const SubNav = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isChangePasswordModalOpen, setIsChangePasswordModalOpen] = useState(false);
+
+  const {pathname} = useLocation();
+  const locationArray = ["/Live-Casino","/AccountStatement","/CurrentBets","/ActivityLog","/Slots","/FantasyGame","/Lottery"]
+  const checkLocation = locationArray.includes(pathname)
 
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -40,9 +45,19 @@ export const SubNav = () => {
 
   const handleCloseChangePasswordModal = () => {
     setIsChangePasswordModalOpen(false);
+
   };
   return (
     <div className="sub-nav">
+        {checkLocation && (
+       <div className="logo">
+        <img src={logos} alt="logo" />
+      </div>
+         )}
+
+
+
+
       <div className="sub-col-left">
         <div className="marquee-sec">
           <marquee>WELCOME</marquee>
@@ -53,10 +68,15 @@ export const SubNav = () => {
       </div>
       <div className="sub-col-right">
         <div className="logo-menu">
+        {!checkLocation ? (
           <div className="menu-icon" onClick={siderHandlerRef}>
-            <HomeIcon />
+            <MenuIcon />
+          </div>) : (<div className="menu-icon">
+            <Link to={"/"}>
+            <HomeIcon/>
+            </Link>
           </div>
-
+        )}
           <div className="logo-icon">
             <Link to={"/"}>
               <img src={logos} alt="logo" />
@@ -108,15 +128,20 @@ export const SubNav = () => {
                   Activity Log
                 </MenuItem>
               </Link>
-
-              <MenuItem onClick={handleOpenModal} disableRipple>
+              <Link to="">
+              <MenuItem onClick={()=>{
+                handleClose()
+                handleOpenModal()}} disableRipple>
                 Set Button Value
               </MenuItem>
-
-              <MenuItem onClick={handleOpenChangePasswordModal} disableRipple>
+              </Link>
+              <Link to="">
+              <MenuItem onClick={()=>{
+                handleClose()
+                handleOpenChangePasswordModal()}} disableRipple>
                 Change Password
               </MenuItem>
-
+              </Link>
               <Divider sx={{ my: 0.5 }} />
               <Link to="">
                 <MenuItem onClick={handleClose} disableRipple>

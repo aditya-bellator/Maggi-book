@@ -2,6 +2,7 @@ import React from 'react'
 import "./style.scss"
 import demo from "../../assets/1.jpg"
 import { Link } from 'react-router-dom'
+import { gpay, paytm, phonepay, upi } from '../../assets'
 const Footer = () => {
   return (
     <div className='footer'>
@@ -27,16 +28,16 @@ const Footer = () => {
         <div className="payment">
             <ul>
                 <li>
-                    <img src={demo} alt="#image" />
+                    <img src={upi} alt="#image" />
                 </li>
                 <li>
-                    <img src={demo} alt="#image" />
+                    <img src={gpay} alt="#image" />
                 </li>
                 <li>
-                    <img src={demo} alt="#image" />
+                    <img src={paytm} alt="#image" />
                 </li>
                 <li>
-                    <img src={demo} alt="#image" />
+                    <img src={phonepay} alt="#image" />
                 </li>
             </ul>
         </div>

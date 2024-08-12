@@ -1,6 +1,8 @@
+@import "../../styles/variables/mixins";
+
 .betvalue {
   position: fixed; 
-  top: 30; 
+  top: 0; 
   left: 0; 
   width: 100vw; 
   height: 100vh; 
@@ -13,15 +15,24 @@
     width: calc(100% - 30px);
     max-width: 550px; 
     background-color: #2e3438;
-    max-height: calc(100vh - 100px);
+    max-height:550px;
     overflow: hidden;
-    overflow-y: scroll;
+    @media (min-width: 992px) and (max-width: 1199px) {
+   width: 100%;
+   height: 90%;
+              }
+              @media (max-width: 767px){
+   width: 100%;
+   height: 90%;
+              }
     .modal-button_n {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 3px 15px;
       background: #666666;
+      height: 35px;
+      // position: static;
       color: rgb(158, 158, 158);
 
       h2 {
@@ -41,6 +52,22 @@
         color: rgb(158, 158, 158);
       }
     }
+    .set-value-btn-sec{
+width: 100%;
+height:400px;
+overflow: hidden;
+overflow-y: scroll;
+padding-bottom: 10px;
+scrollbar-width: thin;
+scrollbar-color: gray transparent;
+@media (min-width: 992px) and (max-width: 1199px) {
+  width: 100%;
+  height: 83%;
+             }
+             @media (max-width: 767px){
+  width: 100%;
+  height: 83%;
+             }
     .gameButtons {
       padding: 8px 0px;
       margin: auto;
@@ -66,7 +93,6 @@
       margin: auto;
       padding-bottom: 5px;
       border-bottom: 1px solid #6d7174;
-
       .value {
         width: 50%;
         padding: 5px;
@@ -78,11 +104,12 @@
         background: #666666;
         display: flex;
         flex-direction: row;
+        // height: 65px;
         margin-bottom: 5px;
       }
       .stack-price {
         width: 100%;
-
+// height: 40px;
         box-sizing: border-box;
         display: flex;
 
@@ -106,20 +133,21 @@
         }
         .stack-price-half-n {
           width: 50%;
-          background-color: rgb(35, 41, 45);
         
           border-radius: 5px;
           display: flex;
           align-items: center;
           margin: 0;
+          height: 38px;
        
           input {
             width: 100%;
             border: 1px solid #6d7174;
             margin: 0;
             height: auto;
+            border-radius: 7px;
             padding: 11px;
-            background: transparent;
+            background-color: rgb(35, 41, 45);
             color: #6d7174;
           
             &:hover {
@@ -129,25 +157,32 @@
           
 
               outline: none;
-              border:2px solid yellow !important;
+              border : 2px solid yellow !important;
             }
             
           }
         }
       }
     }
+  }
     .submit-button {
-      width: calc(100% - 30px);
-      margin: auto;
-      padding: 10px;
+      width: 100%;
+text-align: center;
+      height: 35px;
+      padding: 5px 0;
+      border-top: 1px solid gray;
+   
+      // background: blue;
 
       button{
-        width: 100%;
+        width: 95%;
         background-color: rgb(14, 104, 78);
         border-radius: 5px;
         padding: 10px 0px;
         color: #fff;
+      
         border: none;
+   
         &:hover {
             background: #094836;
           }

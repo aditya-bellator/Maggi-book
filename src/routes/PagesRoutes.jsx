@@ -12,7 +12,7 @@ import Profile from "../Pages/Profile/Profile.jsx";
 import AccountStatement from "../Pages/AccountStatement/AccountStatement.jsx";
 import CurrentBets from "../Pages/CurrentBet/CurrentBets.jsx";
 import ActivityLog from "../Pages/ActivityLog/ActivityLog.jsx";
-import SetButtonValue from "../Pages/SetButtonValue/SetButtonValue.jsx";
+// import SetButtonValue from "../Pages/SetButtonValue/SetButtonValue.jsx";
 import ChangePassword from "../Pages/ChangePassword/ChangePassword.jsx";
 import Auth from "../Pages/authSecure/Auth.jsx";
 
@@ -78,11 +78,11 @@ export const router = createBrowserRouter([
           element: <ActivityLog />,
 
         },
-        {
-          path: "/SetButtonValue",
-          element: <SetButtonValue />,
+        // {
+        //   path: "/SetButtonValue",
+        //   element: <SetButtonValue />,
 
-        },
+        // },
         {
           path: "/ChangePassword",
           element: <ChangePassword />,

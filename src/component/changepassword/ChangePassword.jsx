@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./change.scss";
 import { MdClear } from "react-icons/md";
+import FormPropsTextFields from "../input-fileld/FormPropsTextFields";
 
 
 
@@ -22,13 +23,16 @@ const ChangePassword = ({ onClose }) => {
         </div>
         <form className="form-main">
           <div className="input-group">
-            <input type="text" id="old-password" required placeholder="Old Password" />
+            {/* <input type="text" id="old-password" required placeholder="Old Password" /> */}
+            <FormPropsTextFields label="Old Password" />
           </div>
           <div className="input-group">
-            <input type="text" id="new-password" required placeholder="New Password" />
+            {/* <input type="text" id="new-password" required placeholder="New Password" /> */}
+            <FormPropsTextFields label="New Password"/>
           </div>
           <div className="input-group">
-            <input type="text" id="confirm-password" required placeholder="Confirm Password" />
+            {/* <input type="text" id="confirm-password" required placeholder="Confirm Password" /> */}
+            <FormPropsTextFields label="Confirm Password"/>
           </div>
         </form>
         <div className="submit-button">

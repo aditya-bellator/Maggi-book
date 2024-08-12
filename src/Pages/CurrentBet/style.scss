@@ -11,7 +11,10 @@
     margin: 10px auto;
     justify-content: space-between;
     display: flex;
-    @media (max-width: 767px) {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      flex-direction: column;
+    }
+    @media (max-width: 767px){
       flex-direction: column;
     }
     p {
@@ -20,7 +23,12 @@
       color: #aaafb5;
       font-size: 25px;
       font-weight: 600;
-      @media (max-width: 767px) {
+      @media (min-width: 992px) and (max-width: 1199px) {
+        padding-left: 8px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      @media (max-width: 767px){
         padding-left: 8px;
         font-size: 18px;
         font-weight: 600;
@@ -30,7 +38,11 @@
       width: 30%;
       position: relative;
       display: flex;
-      @media (max-width: 767px) {
+      @media (min-width: 992px) and (max-width: 1199px) {
+        width: 98%;
+        margin: 5px auto;
+      }
+      @media (max-width: 767px){
         width: 98%;
         margin: 5px auto;
       }
@@ -101,7 +113,10 @@ padding-right: 10px;
     color: #aaafb5;
     padding: 0 15px;
     font-size: 14px;
-    @media (max-width: 767px) {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      flex-direction: column;
+    }
+    @media (max-width: 767px){
       flex-direction: column;
     }
     .entries-sec{
@@ -117,7 +132,10 @@ padding-right: 10px;
     }
     .matched-deleted{
 
-      @media (max-width: 767px) {
+      @media (min-width: 992px) and (max-width: 1199px) {
+        padding:6px 0 ;
+      }
+      @media (max-width: 767px){
         padding:6px 0 ;
       }
       .matched{
@@ -152,13 +170,19 @@ padding-right: 10px;
   width: 98%;
   margin: 25px auto;
 
-  @media (max-width: 767px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     width: 100%;
     height: 300px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-
-    overflow-x: scroll;
+   overflow-x: scroll;
+  }
+  @media (max-width: 767px){
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+   overflow-x: scroll;
   }
   .Statement {
     width: 100%;
@@ -195,8 +219,7 @@ color: #aaafb5;
         padding: 6px 10px;
         color: #aaafb5;
         white-space: nowrap;
-        @include mediaQuery(phone) {
-        }
+     
       }
     }
   }

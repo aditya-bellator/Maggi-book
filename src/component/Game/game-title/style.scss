@@ -4,9 +4,12 @@
     padding-top: 10px;
     color: white;
     
-    @media (max-width: 767px) {
+    @media (min-width: 992px) and (max-width: 1199px) {
       display: none;
     }
+    @media (max-width: 767px) {
+      display: none;
+    } 
     p{
         margin: 0;
         padding: 0;
